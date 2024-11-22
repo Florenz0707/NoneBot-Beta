@@ -2560,3 +2560,38 @@ Exception: Browser.close: Connection closed while reading from the driver
 2024-11-22 15:16:51.428 | INFO     | nonebot_plugin_zxpix:download_file:193 - 下载 https://i.suimoe.com/img-master/img/2024/09/05/00/03/43/122142798_p0_master1200.jpg 成功.. Path：D:\NoneBot\Beta\data\nonebot\cache\nonebot_plugin_zxpix\pix_122142798_754.png
 2024-11-22 15:17:00.016 | INFO     | nonebot_plugin_zxpix:_:156 - pix查看收藏排行
 2024-11-22 15:17:00.017 | INFO     | nonebot:simple_run:846 - AlconnaMatcher(type='', module=nonebot_plugin_zxpix.pix_star, lineno=62) running complete
+2024-11-22 15:50:31.286 | INFO     | uvicorn:shutdown:262 - Shutting down
+2024-11-22 15:50:31.287 | WARNING  | nonebot:log:336 - OneBot V11 | WebSocket for Bot 2246956661 closed by peer
+2024-11-22 15:50:31.288 | INFO     | websockets:handler:263 - connection closed
+2024-11-22 15:50:31.385 | INFO     | uvicorn:shutdown:67 - Waiting for application shutdown.
+2024-11-22 15:50:31.407 | ERROR    | uvicorn:send:134 - Traceback (most recent call last):
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\starlette\routing.py", line 693, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 211, in __aexit__
+    await anext(self.gen)
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot\drivers\fastapi.py", line 159, in _lifespan_manager
+    await self._lifespan.shutdown()
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot\internal\driver\_lifespan.py", line 81, in shutdown
+    await self._run_lifespan_func(reversed(self._shutdown_funcs))
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot\internal\driver\_lifespan.py", line 55, in _run_lifespan_func
+    await cast(ASYNC_LIFESPAN_FUNC, func)()
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot_plugin_htmlrender\__init__.py", line 45, in shutdown
+    await shutdown_browser()
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot_plugin_htmlrender\browser.py", line 79, in shutdown_browser
+    await _browser.close()
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 14173, in close
+    return mapping.from_maybe_impl(await self._impl_obj.close(reason=reason))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\playwright\_impl\_browser.py", line 192, in close
+    raise e
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\playwright\_impl\_browser.py", line 189, in close
+    await self._channel.send("close", {"reason": reason})
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 59, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 520, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Browser.close: Connection closed while reading from the driver
+
+2024-11-22 15:50:31.408 | ERROR    | uvicorn:shutdown:73 - Application shutdown failed. Exiting.
+2024-11-22 15:50:31.408 | INFO     | uvicorn:_serve:92 - Finished server process [20016]

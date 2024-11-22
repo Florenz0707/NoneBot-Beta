@@ -1,7 +1,7 @@
 [project]
-name = "Rift"
+name = "Pioneer"
 version = "0.1.0"
-description = "Rift"
+description = "Pioneer"
 readme = "README.md"
 requires-python = ">=3.9, <4.0"
 
