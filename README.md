@@ -1,11 +1,24 @@
-# Pioneer
+# Rift
+Developed by **Florenz**, and appreciation for all open-source developers.
 
-## How to start
+### What is it ?
+A QQ bot based on **NoneBot**, **OneBot** and **NapCat**.
 
-1. generate project using `nb create` .
-2. install plugins using `nb plugin install` .
-3. run your bot using `nb run` .
+### How to use ?
+Reference to documents mentioned above.
 
-## Documentation
+In short:
 
-See [Docs](https://nonebot.dev/)
+`1. cd Rift`
+
+`2. nb run --reload`
+
+`3. send ".help" to your bot`
+
+### Feature
+Nothing brilliant, just a mixing of plugins available in NoneBot Store or Github.  
+Specially rename almost all commands in style of calling a function.  
+Sorry, authors of plugins installed.
+
+### Other
+Version: `0.1.1`
