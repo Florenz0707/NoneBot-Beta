@@ -5,4 +5,3 @@
 /.venv/include
 /.venv/Scripts
 /.venv/share
-!nonebot_plugin_*
