@@ -1,0 +1,6 @@
+/.env.prod
+/logs
+/fonts
+/data
+/.venv
+!nonebot_plugin_*
