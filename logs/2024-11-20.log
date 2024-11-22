@@ -1,0 +1,943 @@
+2024-11-20 22:32:13.714 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_logpile"
+2024-11-20 22:32:13.827 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_abstract"
+2024-11-20 22:32:13.832 | INFO     | nonebot_plugin_leetcode2:<module>:238 - [LC查询] 新建计划任务成功！！  id:leetcode_0，时间为:{'HOUR': 8, 'MINUTE': 30}.
+2024-11-20 22:32:13.833 | INFO     | nonebot_plugin_leetcode2:<module>:238 - [LC查询] 新建计划任务成功！！  id:leetcode_1，时间为:{'HOUR': 20, 'MINUTE': 30}.
+2024-11-20 22:32:13.833 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_leetcode2"
+2024-11-20 22:32:13.850 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_updater"
+2024-11-20 22:32:13.850 | SUCCESS  | nonebot:run:336 - Running NoneBot...
+2024-11-20 22:32:13.866 | INFO     | uvicorn:_serve:82 - Started server process [38644]
+2024-11-20 22:32:13.866 | INFO     | uvicorn:startup:48 - Waiting for application startup.
+2024-11-20 22:32:14.138 | INFO     | nonebot_plugin_htmlrender:launch_browser:56 - 使用 chromium 启动
+2024-11-20 22:32:14.392 | INFO     | nonebot_plugin_htmlrender:init:39 - Browser Started.
+2024-11-20 22:32:14.393 | INFO     | nonebot_plugin_apscheduler:_start_scheduler:35 - Scheduler Started
+2024-11-20 22:32:14.397 | INFO     | uvicorn:startup:62 - Application startup complete.
+2024-11-20 22:32:14.397 | INFO     | uvicorn:_log_started_message:214 - Uvicorn running on http://127.0.0.1:7070 (Press CTRL+C to quit)
+2024-11-20 22:32:15.071 | INFO     | uvicorn:asgi_send:271 - ('127.0.0.1', 4813) - "WebSocket /onebot/v11/ws" [accepted]
+2024-11-20 22:32:15.072 | INFO     | nonebot:log:336 - OneBot V11 | Bot 3247591708 connected
+2024-11-20 22:32:15.073 | INFO     | websockets:handshake:642 - connection open
+2024-11-20 22:32:26.502 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 17711807 from 2559815776 '.daily.get'
+2024-11-20 22:32:26.519 | INFO     | nonebot:_run_matcher:435 - Event will be handled by AlconnaMatcher(type='', module=nonebot_plugin_zxreport, lineno=53)
+2024-11-20 22:32:32.135 | INFO     | nonebot_plugin_zxreport:_:118 - 查看真寻日报
+2024-11-20 22:32:32.135 | INFO     | nonebot:simple_run:846 - AlconnaMatcher(type='', module=nonebot_plugin_zxreport, lineno=53) running complete
+2024-11-20 22:32:47.390 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 17862906 from 2559815776 '.daily.open'
+2024-11-20 22:32:54.278 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 17904254 from 2559815776 '.daily.close'
+2024-11-20 22:34:42.253 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.group.normal]: Message -1410563065 from 2641283261@[群:1042164649] '.bot.open'
+2024-11-20 22:35:16.435 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 17978236 from 2559815776 '.daily.reset'
+2024-11-20 22:35:16.443 | INFO     | nonebot:_run_matcher:435 - Event will be handled by AlconnaMatcher(type='', module=nonebot_plugin_zxreport, lineno=80)
+2024-11-20 22:35:16.444 | INFO     | nonebot_plugin_zxreport:_:109 - 重置真寻日报
+2024-11-20 22:35:17.476 | INFO     | nonebot:simple_run:846 - AlconnaMatcher(type='', module=nonebot_plugin_zxreport, lineno=80) running complete
+2024-11-20 22:36:06.374 | INFO     | uvicorn:shutdown:262 - Shutting down
+2024-11-20 22:36:06.375 | WARNING  | nonebot:log:336 - OneBot V11 | WebSocket for Bot 3247591708 closed by peer
+2024-11-20 22:36:06.376 | INFO     | websockets:handler:263 - connection closed
+2024-11-20 22:36:06.482 | INFO     | uvicorn:shutdown:67 - Waiting for application shutdown.
+2024-11-20 22:36:06.482 | INFO     | nonebot_plugin_apscheduler:_shutdown_scheduler:41 - Scheduler Shutdown
+2024-11-20 22:36:06.489 | ERROR    | uvicorn:send:134 - Traceback (most recent call last):
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\starlette\routing.py", line 693, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 211, in __aexit__
+    await anext(self.gen)
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\drivers\fastapi.py", line 159, in _lifespan_manager
+    await self._lifespan.shutdown()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\internal\driver\_lifespan.py", line 81, in shutdown
+    await self._run_lifespan_func(reversed(self._shutdown_funcs))
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\internal\driver\_lifespan.py", line 55, in _run_lifespan_func
+    await cast(ASYNC_LIFESPAN_FUNC, func)()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot_plugin_htmlrender\__init__.py", line 45, in shutdown
+    await shutdown_browser()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot_plugin_htmlrender\browser.py", line 79, in shutdown_browser
+    await _browser.close()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 14173, in close
+    return mapping.from_maybe_impl(await self._impl_obj.close(reason=reason))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_browser.py", line 192, in close
+    raise e
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_browser.py", line 189, in close
+    await self._channel.send("close", {"reason": reason})
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 59, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 520, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Browser.close: Connection closed while reading from the driver
+
+2024-11-20 22:36:06.490 | ERROR    | uvicorn:shutdown:73 - Application shutdown failed. Exiting.
+2024-11-20 22:36:08.325 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_logpile"
+2024-11-20 22:36:08.326 | SUCCESS  | nonebot:run:336 - Running NoneBot...
+2024-11-20 22:36:08.343 | INFO     | uvicorn:_serve:82 - Started server process [29652]
+2024-11-20 22:36:08.343 | INFO     | uvicorn:startup:48 - Waiting for application startup.
+2024-11-20 22:36:08.629 | INFO     | nonebot_plugin_htmlrender:launch_browser:56 - 使用 chromium 启动
+2024-11-20 22:36:08.912 | INFO     | nonebot_plugin_htmlrender:init:39 - Browser Started.
+2024-11-20 22:36:08.914 | INFO     | nonebot_plugin_apscheduler:_start_scheduler:35 - Scheduler Started
+2024-11-20 22:36:08.915 | INFO     | uvicorn:startup:62 - Application startup complete.
+2024-11-20 22:36:08.916 | INFO     | uvicorn:_log_started_message:214 - Uvicorn running on http://127.0.0.1:7070 (Press CTRL+C to quit)
+2024-11-20 22:36:15.458 | INFO     | uvicorn:asgi_send:271 - ('127.0.0.1', 7437) - "WebSocket /onebot/v11/ws" [accepted]
+2024-11-20 22:36:15.458 | INFO     | nonebot:log:336 - OneBot V11 | Bot 3247591708 connected
+2024-11-20 22:36:15.459 | INFO     | websockets:handshake:642 - connection open
+2024-11-20 22:36:18.290 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 18135657 from 2559815776 '开启真寻日报'
+2024-11-20 22:36:26.024 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 18209721 from 2559815776 '.开启真寻日报'
+2024-11-20 22:36:46.122 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 18225398 from 2559815776 '真寻日报'
+2024-11-20 22:36:59.100 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 18329718 from 2559815776 '真寻日报\n开启 1245'
+2024-11-20 22:38:00.179 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 18379859 from 2559815776 '开启真寻日报 1248'
+2024-11-20 22:38:00.188 | INFO     | nonebot:_run_matcher:435 - Event will be handled by AlconnaMatcher(type='', module=nonebot_plugin_zxreport, lineno=55)
+2024-11-20 22:38:01.280 | INFO     | nonebot_plugin_zxreport:_:99 - 开启真寻日报: ('1248',)
+2024-11-20 22:38:01.281 | INFO     | nonebot:simple_run:846 - AlconnaMatcher(type='', module=nonebot_plugin_zxreport, lineno=55) running complete
+2024-11-20 22:38:17.427 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 18511733 from 2559815776 '关闭真寻日报 1248'
+2024-11-20 22:38:17.477 | INFO     | nonebot:_run_matcher:435 - Event will be handled by AlconnaMatcher(type='', module=nonebot_plugin_zxreport, lineno=55)
+2024-11-20 22:38:18.123 | INFO     | nonebot_plugin_zxreport:_:99 - 关闭真寻日报: ('1248',)
+2024-11-20 22:38:18.123 | INFO     | nonebot:simple_run:846 - AlconnaMatcher(type='', module=nonebot_plugin_zxreport, lineno=55) running complete
+2024-11-20 22:38:56.156 | INFO     | uvicorn:shutdown:262 - Shutting down
+2024-11-20 22:38:56.158 | WARNING  | nonebot:log:336 - OneBot V11 | WebSocket for Bot 3247591708 closed by peer
+2024-11-20 22:38:56.159 | INFO     | websockets:handler:263 - connection closed
+2024-11-20 22:38:56.261 | INFO     | uvicorn:shutdown:67 - Waiting for application shutdown.
+2024-11-20 22:38:56.262 | INFO     | nonebot_plugin_apscheduler:_shutdown_scheduler:41 - Scheduler Shutdown
+2024-11-20 22:38:56.271 | ERROR    | uvicorn:send:134 - Traceback (most recent call last):
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\starlette\routing.py", line 693, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 211, in __aexit__
+    await anext(self.gen)
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\drivers\fastapi.py", line 159, in _lifespan_manager
+    await self._lifespan.shutdown()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\internal\driver\_lifespan.py", line 81, in shutdown
+    await self._run_lifespan_func(reversed(self._shutdown_funcs))
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\internal\driver\_lifespan.py", line 55, in _run_lifespan_func
+    await cast(ASYNC_LIFESPAN_FUNC, func)()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot_plugin_htmlrender\__init__.py", line 45, in shutdown
+    await shutdown_browser()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot_plugin_htmlrender\browser.py", line 79, in shutdown_browser
+    await _browser.close()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 14173, in close
+    return mapping.from_maybe_impl(await self._impl_obj.close(reason=reason))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_browser.py", line 192, in close
+    raise e
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_browser.py", line 189, in close
+    await self._channel.send("close", {"reason": reason})
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 59, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 520, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Browser.close: Connection closed while reading from the driver
+
+2024-11-20 22:38:56.271 | ERROR    | uvicorn:shutdown:73 - Application shutdown failed. Exiting.
+2024-11-20 22:38:58.046 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_logpile"
+2024-11-20 22:38:58.046 | SUCCESS  | nonebot:run:336 - Running NoneBot...
+2024-11-20 22:38:58.062 | INFO     | uvicorn:_serve:82 - Started server process [36812]
+2024-11-20 22:38:58.062 | INFO     | uvicorn:startup:48 - Waiting for application startup.
+2024-11-20 22:38:58.326 | INFO     | nonebot_plugin_htmlrender:launch_browser:56 - 使用 chromium 启动
+2024-11-20 22:38:58.601 | INFO     | nonebot_plugin_htmlrender:init:39 - Browser Started.
+2024-11-20 22:38:58.603 | INFO     | nonebot_plugin_apscheduler:_start_scheduler:35 - Scheduler Started
+2024-11-20 22:38:58.605 | INFO     | uvicorn:startup:62 - Application startup complete.
+2024-11-20 22:38:58.606 | INFO     | uvicorn:_log_started_message:214 - Uvicorn running on http://127.0.0.1:7070 (Press CTRL+C to quit)
+2024-11-20 22:39:05.696 | INFO     | uvicorn:asgi_send:271 - ('127.0.0.1', 14846) - "WebSocket /onebot/v11/ws" [accepted]
+2024-11-20 22:39:05.697 | INFO     | nonebot:log:336 - OneBot V11 | Bot 3247591708 connected
+2024-11-20 22:39:05.698 | INFO     | websockets:handshake:642 - connection open
+2024-11-20 22:39:12.111 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 18706178 from 2559815776 '.daily.open 1254'
+2024-11-20 22:39:44.145 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 18803944 from 2559815776 '.daily.close 124'
+2024-11-20 22:45:16.120 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 18867354 from 2559815776 '.report-status'
+2024-11-20 22:45:29.186 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 18928217 from 2559815776 'report-status'
+2024-11-20 22:46:40.510 | INFO     | uvicorn:shutdown:262 - Shutting down
+2024-11-20 22:46:40.511 | WARNING  | nonebot:log:336 - OneBot V11 | WebSocket for Bot 3247591708 closed by peer
+2024-11-20 22:46:40.512 | INFO     | websockets:handler:263 - connection closed
+2024-11-20 22:46:40.619 | INFO     | uvicorn:shutdown:67 - Waiting for application shutdown.
+2024-11-20 22:46:40.619 | INFO     | nonebot_plugin_apscheduler:_shutdown_scheduler:41 - Scheduler Shutdown
+2024-11-20 22:46:40.628 | ERROR    | uvicorn:send:134 - Traceback (most recent call last):
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\starlette\routing.py", line 693, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 211, in __aexit__
+    await anext(self.gen)
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\drivers\fastapi.py", line 159, in _lifespan_manager
+    await self._lifespan.shutdown()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\internal\driver\_lifespan.py", line 81, in shutdown
+    await self._run_lifespan_func(reversed(self._shutdown_funcs))
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\internal\driver\_lifespan.py", line 55, in _run_lifespan_func
+    await cast(ASYNC_LIFESPAN_FUNC, func)()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot_plugin_htmlrender\__init__.py", line 45, in shutdown
+    await shutdown_browser()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot_plugin_htmlrender\browser.py", line 79, in shutdown_browser
+    await _browser.close()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 14173, in close
+    return mapping.from_maybe_impl(await self._impl_obj.close(reason=reason))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_browser.py", line 192, in close
+    raise e
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_browser.py", line 189, in close
+    await self._channel.send("close", {"reason": reason})
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 59, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 520, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Browser.close: Connection closed while reading from the driver
+
+2024-11-20 22:46:42.425 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_logpile"
+2024-11-20 22:46:42.425 | SUCCESS  | nonebot:run:336 - Running NoneBot...
+2024-11-20 22:46:42.441 | INFO     | uvicorn:_serve:82 - Started server process [7500]
+2024-11-20 22:46:42.441 | INFO     | uvicorn:startup:48 - Waiting for application startup.
+2024-11-20 22:46:42.710 | INFO     | nonebot_plugin_htmlrender:launch_browser:56 - 使用 chromium 启动
+2024-11-20 22:46:42.922 | INFO     | nonebot_plugin_htmlrender:init:39 - Browser Started.
+2024-11-20 22:46:42.924 | INFO     | nonebot_plugin_apscheduler:_start_scheduler:35 - Scheduler Started
+2024-11-20 22:46:42.926 | INFO     | uvicorn:startup:62 - Application startup complete.
+2024-11-20 22:46:42.927 | INFO     | uvicorn:_log_started_message:214 - Uvicorn running on http://127.0.0.1:7070 (Press CTRL+C to quit)
+2024-11-20 22:46:46.408 | INFO     | uvicorn:asgi_send:271 - ('127.0.0.1', 12165) - "WebSocket /onebot/v11/ws" [accepted]
+2024-11-20 22:46:46.409 | INFO     | nonebot:log:336 - OneBot V11 | Bot 3247591708 connected
+2024-11-20 22:46:46.410 | INFO     | websockets:handshake:642 - connection open
+2024-11-20 22:46:53.080 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 18945338 from 2559815776 '开启真寻日报 1248'
+2024-11-20 22:47:12.376 | INFO     | uvicorn:shutdown:262 - Shutting down
+2024-11-20 22:47:12.376 | WARNING  | nonebot:log:336 - OneBot V11 | WebSocket for Bot 3247591708 closed by peer
+2024-11-20 22:47:12.377 | INFO     | websockets:handler:263 - connection closed
+2024-11-20 22:47:12.484 | INFO     | uvicorn:shutdown:67 - Waiting for application shutdown.
+2024-11-20 22:47:12.485 | INFO     | nonebot_plugin_apscheduler:_shutdown_scheduler:41 - Scheduler Shutdown
+2024-11-20 22:47:12.493 | ERROR    | uvicorn:send:134 - Traceback (most recent call last):
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\starlette\routing.py", line 693, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 211, in __aexit__
+    await anext(self.gen)
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\drivers\fastapi.py", line 159, in _lifespan_manager
+    await self._lifespan.shutdown()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\internal\driver\_lifespan.py", line 81, in shutdown
+    await self._run_lifespan_func(reversed(self._shutdown_funcs))
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\internal\driver\_lifespan.py", line 55, in _run_lifespan_func
+    await cast(ASYNC_LIFESPAN_FUNC, func)()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot_plugin_htmlrender\__init__.py", line 45, in shutdown
+    await shutdown_browser()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot_plugin_htmlrender\browser.py", line 79, in shutdown_browser
+    await _browser.close()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 14173, in close
+    return mapping.from_maybe_impl(await self._impl_obj.close(reason=reason))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_browser.py", line 192, in close
+    raise e
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_browser.py", line 189, in close
+    await self._channel.send("close", {"reason": reason})
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 59, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 520, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Browser.close: Connection closed while reading from the driver
+
+2024-11-20 22:47:12.494 | ERROR    | uvicorn:shutdown:73 - Application shutdown failed. Exiting.
+2024-11-20 23:00:26.802 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_logpile"
+2024-11-20 23:00:26.805 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_waiter"
+2024-11-20 23:00:26.868 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_alconna:uniseg" from "nonebot_plugin_alconna.uniseg"
+2024-11-20 23:00:26.918 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_alconna"
+2024-11-20 23:00:26.963 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_userinfo"
+2024-11-20 23:00:26.986 | WARNING  | nonebot_plugin_random_stereotypes:<module>:115 - Cannot construct meme generator, will disable meme feature
+2024-11-20 23:00:26.986 | WARNING  | nonebot_plugin_random_stereotypes:<module>:116 - Cannot find usable meme source, consider running `pip install nonebot-plugin-random-stereotypes[meme]` to use embed source
+2024-11-20 23:00:27.019 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_random_stereotypes"
+2024-11-20 23:00:27.201 | ERROR    | nonebot:load_plugin:198 - Failed to import "nonebot_plugin_pixivrank_search"
+Traceback (most recent call last):
+
+  File "<string>", line 14, in <module>
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\plugin\load.py", line 133, in load_from_toml
+    return load_all_plugins(plugins, plugin_dirs)
+           │                │        └ []
+           │                └ ['nonebot_plugin_updater', 'nonebot_plugin_leetcode2', 'nonebot_plugin_abstract', 'nonebot_plugin_jrrp2', 'nonebot_plugin_ran...
+           └ <function load_all_plugins at 0x0000027951A81120>
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\plugin\load.py", line 67, in load_all_plugins
+    return manager.load_all_plugins()
+           │       └ <function PluginManager.load_all_plugins at 0x00000279508836A0>
+           └ PluginManager(available_plugins={'nonebot_plugin_logpile': 'nonebot_plugin_logpile', 'nonebot_plugin_abstract': 'nonebot_plug...
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\plugin\manager.py", line 205, in load_all_plugins
+    return set(
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\plugin\manager.py", line 206, in <genexpr>
+    filter(None, (self.load_plugin(name) for name in self.available_plugins))
+                  │    │           │         │       │    └ <property object at 0x0000027951A71FD0>
+                  │    │           │         │       └ PluginManager(available_plugins={'nonebot_plugin_logpile': 'nonebot_plugin_logpile', 'nonebot_plugin_abstract': 'nonebot_plug...
+                  │    │           │         └ 'nonebot_plugin_pixivrank_search'
+                  │    │           └ 'nonebot_plugin_pixivrank_search'
+                  │    └ <function PluginManager.load_plugin at 0x0000027950883600>
+                  └ PluginManager(available_plugins={'nonebot_plugin_logpile': 'nonebot_plugin_logpile', 'nonebot_plugin_abstract': 'nonebot_plug...
+> File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\plugin\manager.py", line 169, in load_plugin
+    module = importlib.import_module(self._third_party_plugin_ids[name])
+             │         │             │    │                       └ 'nonebot_plugin_pixivrank_search'
+             │         │             │    └ {'nonebot_plugin_logpile': 'nonebot_plugin_logpile', 'nonebot_plugin_abstract': 'nonebot_plugin_abstract', 'nonebot_plugin_ra...
+             │         │             └ PluginManager(available_plugins={'nonebot_plugin_logpile': 'nonebot_plugin_logpile', 'nonebot_plugin_abstract': 'nonebot_plug...
+             │         └ <function import_module at 0x000002794D46E8E0>
+             └ <module 'importlib' from 'C:\\Users\\Flo\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\__init__.py'>
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           │          │           │    │        │        └ 0
+           │          │           │    │        └ None
+           │          │           │    └ 0
+           │          │           └ 'nonebot_plugin_pixivrank_search'
+           │          └ <function _gcd_import at 0x000002794D3A3D80>
+           └ <module '_frozen_importlib' (frozen)>
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\plugin\manager.py", line 257, in exec_module
+    super().exec_module(module)
+                        └ <module 'nonebot_plugin_pixivrank_search' from 'D:\\NoneBot\\Rift\\.venv\\Lib\\site-packages\\nonebot_plugin_pixivrank_search...
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot_plugin_pixivrank_search\__init__.py", line 5, in <module>
+    from .data_source import get_pixiv_urls, download_pixiv_imgs, search_pixiv_urls
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot_plugin_pixivrank_search\data_source.py", line 5, in <module>
+    from .config import config
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot_plugin_pixivrank_search\config.py", line 10, in <module>
+    config = Config.parse_obj(get_driver().config)
+             │      │         └ <function get_driver at 0x000002794D4A8180>
+             │      └ <classmethod(<function BaseModel.parse_obj at 0x000002794FE120C0>)>
+             └ <class 'nonebot_plugin_pixivrank_search.config.Config'>
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\pydantic\main.py", line 1162, in parse_obj
+    return cls.model_validate(obj)
+           │   │              └ Config(driver='~fastapi+~httpx+~websockets', host=IPv4Address('127.0.0.1'), port=7070, log_level='INFO', api_timeout=30.0, su...
+           │   └ <classmethod(<function BaseModel.model_validate at 0x000002794FE111C0>)>
+           └ <class 'nonebot_plugin_pixivrank_search.config.Config'>
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\pydantic\main.py", line 596, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           │   │                      └ <method 'validate_python' of 'pydantic_core._pydantic_core.SchemaValidator' objects>
+           │   └ SchemaValidator(title="Config", validator=Model(
+           │         ModelValidator {
+           │             revalidate: Never,
+           │             validator: ModelFiel...
+           └ <class 'nonebot_plugin_pixivrank_search.config.Config'>
+
+pydantic_core._pydantic_core.ValidationError: 1 validation error for Config
+  Input should be a valid dictionary or instance of Config [type=model_type, input_value=Config(driver='~fastapi+~...', logpile_level='INFO'), input_type=Config]
+    For further information visit https://errors.pydantic.dev/2.9/v/model_type
+2024-11-20 23:00:27.225 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_jrrp2"
+2024-11-20 23:00:27.242 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_updater"
+2024-11-20 23:00:27.359 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_abstract"
+2024-11-20 23:00:27.567 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_apscheduler"
+2024-11-20 23:00:27.571 | INFO     | nonebot_plugin_leetcode2:<module>:238 - [LC查询] 新建计划任务成功！！  id:leetcode_0，时间为:{'HOUR': 8, 'MINUTE': 30}.
+2024-11-20 23:00:27.572 | INFO     | nonebot_plugin_leetcode2:<module>:238 - [LC查询] 新建计划任务成功！！  id:leetcode_1，时间为:{'HOUR': 20, 'MINUTE': 30}.
+2024-11-20 23:00:27.572 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_leetcode2"
+2024-11-20 23:00:27.572 | SUCCESS  | nonebot:run:336 - Running NoneBot...
+2024-11-20 23:00:27.588 | INFO     | uvicorn:_serve:82 - Started server process [44336]
+2024-11-20 23:00:27.588 | INFO     | uvicorn:startup:48 - Waiting for application startup.
+2024-11-20 23:00:27.857 | INFO     | nonebot_plugin_htmlrender:launch_browser:56 - 使用 chromium 启动
+2024-11-20 23:00:28.071 | INFO     | nonebot_plugin_htmlrender:init:39 - Browser Started.
+2024-11-20 23:00:28.073 | INFO     | nonebot_plugin_apscheduler:_start_scheduler:35 - Scheduler Started
+2024-11-20 23:00:28.074 | INFO     | uvicorn:startup:62 - Application startup complete.
+2024-11-20 23:00:28.075 | INFO     | uvicorn:_log_started_message:214 - Uvicorn running on http://127.0.0.1:7070 (Press CTRL+C to quit)
+2024-11-20 23:00:31.231 | INFO     | uvicorn:asgi_send:271 - ('127.0.0.1', 2472) - "WebSocket /onebot/v11/ws" [accepted]
+2024-11-20 23:00:31.232 | INFO     | nonebot:log:336 - OneBot V11 | Bot 3247591708 connected
+2024-11-20 23:00:31.232 | INFO     | websockets:handshake:642 - connection open
+2024-11-20 23:10:24.782 | INFO     | uvicorn:shutdown:262 - Shutting down
+2024-11-20 23:10:24.783 | WARNING  | nonebot:log:336 - OneBot V11 | WebSocket for Bot 3247591708 closed by peer
+2024-11-20 23:10:24.784 | INFO     | websockets:handler:263 - connection closed
+2024-11-20 23:10:24.891 | INFO     | uvicorn:shutdown:67 - Waiting for application shutdown.
+2024-11-20 23:10:24.892 | INFO     | nonebot_plugin_apscheduler:_shutdown_scheduler:41 - Scheduler Shutdown
+2024-11-20 23:10:24.901 | ERROR    | uvicorn:send:134 - Traceback (most recent call last):
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\starlette\routing.py", line 693, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 211, in __aexit__
+    await anext(self.gen)
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\drivers\fastapi.py", line 159, in _lifespan_manager
+    await self._lifespan.shutdown()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\internal\driver\_lifespan.py", line 81, in shutdown
+    await self._run_lifespan_func(reversed(self._shutdown_funcs))
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\internal\driver\_lifespan.py", line 55, in _run_lifespan_func
+    await cast(ASYNC_LIFESPAN_FUNC, func)()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot_plugin_htmlrender\__init__.py", line 45, in shutdown
+    await shutdown_browser()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot_plugin_htmlrender\browser.py", line 79, in shutdown_browser
+    await _browser.close()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 14173, in close
+    return mapping.from_maybe_impl(await self._impl_obj.close(reason=reason))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_browser.py", line 192, in close
+    raise e
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_browser.py", line 189, in close
+    await self._channel.send("close", {"reason": reason})
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 59, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 520, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Browser.close: Connection closed while reading from the driver
+
+2024-11-20 23:10:24.901 | ERROR    | uvicorn:shutdown:73 - Application shutdown failed. Exiting.
+2024-11-20 23:11:05.535 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_logpile"
+2024-11-20 23:11:05.544 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_jrrp2"
+2024-11-20 23:11:05.754 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_apscheduler"
+2024-11-20 23:11:05.757 | INFO     | nonebot_plugin_leetcode2:<module>:238 - [LC查询] 新建计划任务成功！！  id:leetcode_0，时间为:{'HOUR': 8, 'MINUTE': 30}.
+2024-11-20 23:11:05.758 | INFO     | nonebot_plugin_leetcode2:<module>:238 - [LC查询] 新建计划任务成功！！  id:leetcode_1，时间为:{'HOUR': 20, 'MINUTE': 30}.
+2024-11-20 23:11:05.758 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_leetcode2"
+2024-11-20 23:11:05.758 | SUCCESS  | nonebot:run:336 - Running NoneBot...
+2024-11-20 23:11:05.774 | INFO     | uvicorn:_serve:82 - Started server process [42588]
+2024-11-20 23:11:05.775 | INFO     | uvicorn:startup:48 - Waiting for application startup.
+2024-11-20 23:11:06.042 | INFO     | nonebot_plugin_htmlrender:launch_browser:56 - 使用 chromium 启动
+2024-11-20 23:11:06.264 | INFO     | nonebot_plugin_htmlrender:init:39 - Browser Started.
+2024-11-20 23:11:06.267 | INFO     | nonebot_plugin_apscheduler:_start_scheduler:35 - Scheduler Started
+2024-11-20 23:11:06.267 | INFO     | uvicorn:startup:62 - Application startup complete.
+2024-11-20 23:11:06.268 | INFO     | uvicorn:_log_started_message:214 - Uvicorn running on http://127.0.0.1:7070 (Press CTRL+C to quit)
+2024-11-20 23:11:07.334 | INFO     | uvicorn:asgi_send:271 - ('127.0.0.1', 3998) - "WebSocket /onebot/v11/ws" [accepted]
+2024-11-20 23:11:07.335 | INFO     | nonebot:log:336 - OneBot V11 | Bot 3247591708 connected
+2024-11-20 23:11:07.335 | INFO     | websockets:handshake:642 - connection open
+2024-11-20 23:14:11.173 | INFO     | uvicorn:shutdown:262 - Shutting down
+2024-11-20 23:14:11.175 | WARNING  | nonebot:log:336 - OneBot V11 | WebSocket for Bot 3247591708 closed by peer
+2024-11-20 23:14:11.176 | INFO     | websockets:handler:263 - connection closed
+2024-11-20 23:14:11.263 | INFO     | uvicorn:shutdown:67 - Waiting for application shutdown.
+2024-11-20 23:14:11.264 | INFO     | nonebot_plugin_apscheduler:_shutdown_scheduler:41 - Scheduler Shutdown
+2024-11-20 23:14:11.280 | ERROR    | uvicorn:send:134 - Traceback (most recent call last):
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\starlette\routing.py", line 693, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 211, in __aexit__
+    await anext(self.gen)
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\drivers\fastapi.py", line 159, in _lifespan_manager
+    await self._lifespan.shutdown()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\internal\driver\_lifespan.py", line 81, in shutdown
+    await self._run_lifespan_func(reversed(self._shutdown_funcs))
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\internal\driver\_lifespan.py", line 55, in _run_lifespan_func
+    await cast(ASYNC_LIFESPAN_FUNC, func)()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot_plugin_htmlrender\__init__.py", line 45, in shutdown
+    await shutdown_browser()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot_plugin_htmlrender\browser.py", line 79, in shutdown_browser
+    await _browser.close()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 14173, in close
+    return mapping.from_maybe_impl(await self._impl_obj.close(reason=reason))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_browser.py", line 192, in close
+    raise e
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_browser.py", line 189, in close
+    await self._channel.send("close", {"reason": reason})
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 59, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 520, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Browser.close: Connection closed while reading from the driver
+
+2024-11-20 23:14:11.281 | ERROR    | uvicorn:shutdown:73 - Application shutdown failed. Exiting.
+2024-11-20 23:14:11.282 | INFO     | uvicorn:_serve:92 - Finished server process [42588]
+2024-11-20 23:27:32.385 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_logpile"
+2024-11-20 23:27:32.388 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_waiter"
+2024-11-20 23:27:32.415 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_userinfo"
+2024-11-20 23:27:32.439 | WARNING  | nonebot_plugin_random_stereotypes:<module>:115 - Cannot construct meme generator, will disable meme feature
+2024-11-20 23:27:32.440 | WARNING  | nonebot_plugin_random_stereotypes:<module>:116 - Cannot find usable meme source, consider running `pip install nonebot-plugin-random-stereotypes[meme]` to use embed source
+2024-11-20 23:27:32.450 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_random_stereotypes"
+2024-11-20 23:27:32.571 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_abstract"
+2024-11-20 23:27:32.587 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_updater"
+2024-11-20 23:27:32.595 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_jrrp2"
+2024-11-20 23:27:32.697 | INFO     | nonebot_plugin_leetcode2:<module>:238 - [LC查询] 新建计划任务成功！！  id:leetcode_0，时间为:{'HOUR': 8, 'MINUTE': 30}.
+2024-11-20 23:27:32.698 | INFO     | nonebot_plugin_leetcode2:<module>:238 - [LC查询] 新建计划任务成功！！  id:leetcode_1，时间为:{'HOUR': 20, 'MINUTE': 30}.
+2024-11-20 23:27:32.698 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_leetcode2"
+2024-11-20 23:27:32.700 | SUCCESS  | nonebot:run:336 - Running NoneBot...
+2024-11-20 23:27:32.717 | INFO     | uvicorn:_serve:82 - Started server process [46680]
+2024-11-20 23:27:32.717 | INFO     | uvicorn:startup:48 - Waiting for application startup.
+2024-11-20 23:27:32.722 | INFO     | nonebot_plugin_apscheduler:_start_scheduler:35 - Scheduler Started
+2024-11-20 23:27:34.739 | INFO     | nonebot_plugin_zxpix:_:20 - 成功生成PIX token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImM5MGMxMjk2ZWZhNmViYzNjZGY5ZWFmMzZmYmIyZmYwYWU4YjdhZmFhMDZkOWJkNmQ3Y2U5ZGFkZGUzNzhkYjciLCJleHAiOjE4ODk3OTY0NTQsInN1YiI6ImFjY2VzcyIsImlzX3N1cGVydXNlciI6ZmFsc2V9.GOlKLCS_meJ8VuEXU-VI9sBJEviSvys9eiugomorhRk
+2024-11-20 23:27:35.020 | INFO     | nonebot_plugin_htmlrender:launch_browser:56 - 使用 chromium 启动
+2024-11-20 23:27:35.243 | INFO     | nonebot_plugin_htmlrender:init:39 - Browser Started.
+2024-11-20 23:27:35.244 | INFO     | uvicorn:startup:62 - Application startup complete.
+2024-11-20 23:27:35.245 | INFO     | uvicorn:_log_started_message:214 - Uvicorn running on http://127.0.0.1:7070 (Press CTRL+C to quit)
+2024-11-20 23:27:39.760 | INFO     | uvicorn:asgi_send:271 - ('127.0.0.1', 7672) - "WebSocket /onebot/v11/ws" [accepted]
+2024-11-20 23:27:39.760 | INFO     | nonebot:log:336 - OneBot V11 | Bot 3247591708 connected
+2024-11-20 23:27:39.761 | INFO     | websockets:handshake:642 - connection open
+2024-11-20 23:27:51.351 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 19040719 from 2559815776 'pix'
+2024-11-20 23:27:51.370 | INFO     | nonebot:_run_matcher:435 - Event will be handled by AlconnaMatcher(type='', module=nonebot_plugin_zxpix.pix, lineno=43)
+2024-11-20 23:27:55.265 | INFO     | nonebot_plugin_zxpix:download_file:193 - 下载 https://i.suimoe.com/img-master/img/2020/12/17/01/32/45/86345403_p3_master1200.jpg 成功.. Path：D:\NoneBot\Rift\data\nonebot\cache\nonebot_plugin_zxpix\pix_86345403_606.png
+2024-11-20 23:27:57.232 | INFO     | nonebot_plugin_zxpix:_:112 - pix调用 tags: ()
+2024-11-20 23:27:57.232 | INFO     | nonebot_plugin_zxpix:_:113 - pix调用 tags: ()
+2024-11-20 23:27:57.232 | INFO     | nonebot:simple_run:846 - AlconnaMatcher(type='', module=nonebot_plugin_zxpix.pix, lineno=43) running complete
+2024-11-20 23:28:33.354 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 19152734 from 2559815776 'pix -r'
+2024-11-20 23:28:33.387 | INFO     | nonebot:_run_matcher:435 - Event will be handled by AlconnaMatcher(type='', module=nonebot_plugin_zxpix.pix, lineno=43)
+2024-11-20 23:28:36.211 | INFO     | nonebot_plugin_zxpix:download_file:193 - 下载 https://i.suimoe.com/img-master/img/2023/02/20/03/08/23/105542678_p0_master1200.jpg 成功.. Path：D:\NoneBot\Rift\data\nonebot\cache\nonebot_plugin_zxpix\pix_105542678_670.png
+2024-11-20 23:28:37.659 | INFO     | nonebot_plugin_zxpix:_:112 - pix调用 tags: ()
+2024-11-20 23:28:37.659 | INFO     | nonebot_plugin_zxpix:_:113 - pix调用 tags: ()
+2024-11-20 23:28:37.660 | INFO     | nonebot:simple_run:846 - AlconnaMatcher(type='', module=nonebot_plugin_zxpix.pix, lineno=43) running complete
+2024-11-20 23:28:47.760 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 19272552 from 2559815776 'pix -n 3'
+2024-11-20 23:28:47.768 | INFO     | nonebot:_run_matcher:435 - Event will be handled by AlconnaMatcher(type='', module=nonebot_plugin_zxpix.pix, lineno=43)
+2024-11-20 23:28:51.335 | INFO     | nonebot_plugin_zxpix:download_file:193 - 下载 https://i.suimoe.com/img-master/img/2024/06/19/20/19/00/119784360_p0_master1200.jpg 成功.. Path：D:\NoneBot\Rift\data\nonebot\cache\nonebot_plugin_zxpix\pix_119784360_147.png
+2024-11-20 23:28:51.462 | INFO     | nonebot_plugin_zxpix:download_file:193 - 下载 https://i.suimoe.com/img-master/img/2022/11/30/21/25/49/103228844_p1_master1200.jpg 成功.. Path：D:\NoneBot\Rift\data\nonebot\cache\nonebot_plugin_zxpix\pix_103228844_375.png
+2024-11-20 23:28:51.607 | INFO     | nonebot_plugin_zxpix:download_file:193 - 下载 https://i.suimoe.com/img-master/img/2019/06/09/19/51/31/75141909_p0_master1200.jpg 成功.. Path：D:\NoneBot\Rift\data\nonebot\cache\nonebot_plugin_zxpix\pix_75141909_264.png
+2024-11-20 23:28:55.539 | INFO     | nonebot_plugin_zxpix:_:112 - pix调用 tags: ()
+2024-11-20 23:28:55.539 | INFO     | nonebot_plugin_zxpix:_:113 - pix调用 tags: ()
+2024-11-20 23:28:55.540 | INFO     | nonebot:simple_run:846 - AlconnaMatcher(type='', module=nonebot_plugin_zxpix.pix, lineno=43) running complete
+2024-11-20 23:29:03.583 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 19574150 from 2559815776 'pix -n 7'
+2024-11-20 23:29:03.591 | INFO     | nonebot:_run_matcher:435 - Event will be handled by AlconnaMatcher(type='', module=nonebot_plugin_zxpix.pix, lineno=43)
+2024-11-20 23:29:08.368 | INFO     | nonebot_plugin_zxpix:download_file:193 - 下载 https://i.suimoe.com/img-master/img/2018/07/21/19/45/51/69792174_p0_master1200.jpg 成功.. Path：D:\NoneBot\Rift\data\nonebot\cache\nonebot_plugin_zxpix\pix_69792174_288.png
+2024-11-20 23:29:08.867 | INFO     | nonebot_plugin_zxpix:download_file:193 - 下载 https://i.suimoe.com/img-master/img/2020/12/17/16/19/19/86352872_p5_master1200.jpg 成功.. Path：D:\NoneBot\Rift\data\nonebot\cache\nonebot_plugin_zxpix\pix_86352872_332.png
+2024-11-20 23:29:09.002 | INFO     | nonebot_plugin_zxpix:download_file:193 - 下载 https://i.suimoe.com/img-master/img/2022/09/25/01/20/43/101465020_p1_master1200.jpg 成功.. Path：D:\NoneBot\Rift\data\nonebot\cache\nonebot_plugin_zxpix\pix_101465020_41.png
+2024-11-20 23:29:09.670 | INFO     | nonebot_plugin_zxpix:download_file:193 - 下载 https://i.suimoe.com/img-master/img/2024/03/12/00/00/57/116838375_p1_master1200.jpg 成功.. Path：D:\NoneBot\Rift\data\nonebot\cache\nonebot_plugin_zxpix\pix_116838375_110.png
+2024-11-20 23:29:10.387 | INFO     | nonebot_plugin_zxpix:download_file:193 - 下载 https://i.suimoe.com/img-master/img/2020/02/04/22/48/51/79285167_p0_master1200.jpg 成功.. Path：D:\NoneBot\Rift\data\nonebot\cache\nonebot_plugin_zxpix\pix_79285167_171.png
+2024-11-20 23:29:10.980 | INFO     | nonebot_plugin_zxpix:download_file:193 - 下载 https://i.suimoe.com/img-master/img/2023/03/13/16/20/54/106178450_p0_master1200.jpg 成功.. Path：D:\NoneBot\Rift\data\nonebot\cache\nonebot_plugin_zxpix\pix_106178450_344.png
+2024-11-20 23:29:11.143 | INFO     | nonebot_plugin_zxpix:download_file:193 - 下载 https://i.suimoe.com/img-master/img/2023/11/07/12/45/52/113212453_p0_master1200.jpg 成功.. Path：D:\NoneBot\Rift\data\nonebot\cache\nonebot_plugin_zxpix\pix_113212453_355.png
+2024-11-20 23:29:21.611 | INFO     | nonebot_plugin_zxpix:_:112 - pix调用 tags: ()
+2024-11-20 23:29:21.612 | INFO     | nonebot_plugin_zxpix:_:113 - pix调用 tags: ()
+2024-11-20 23:29:21.612 | INFO     | nonebot:simple_run:846 - AlconnaMatcher(type='', module=nonebot_plugin_zxpix.pix, lineno=43) running complete
+2024-11-20 23:30:03.724 | INFO     | uvicorn:shutdown:262 - Shutting down
+2024-11-20 23:30:03.725 | WARNING  | nonebot:log:336 - OneBot V11 | WebSocket for Bot 3247591708 closed by peer
+2024-11-20 23:30:03.726 | INFO     | websockets:handler:263 - connection closed
+2024-11-20 23:30:03.830 | INFO     | uvicorn:shutdown:67 - Waiting for application shutdown.
+2024-11-20 23:30:03.839 | ERROR    | uvicorn:send:134 - Traceback (most recent call last):
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\starlette\routing.py", line 693, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 211, in __aexit__
+    await anext(self.gen)
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\drivers\fastapi.py", line 159, in _lifespan_manager
+    await self._lifespan.shutdown()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\internal\driver\_lifespan.py", line 81, in shutdown
+    await self._run_lifespan_func(reversed(self._shutdown_funcs))
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\internal\driver\_lifespan.py", line 55, in _run_lifespan_func
+    await cast(ASYNC_LIFESPAN_FUNC, func)()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot_plugin_htmlrender\__init__.py", line 45, in shutdown
+    await shutdown_browser()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot_plugin_htmlrender\browser.py", line 79, in shutdown_browser
+    await _browser.close()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 14173, in close
+    return mapping.from_maybe_impl(await self._impl_obj.close(reason=reason))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_browser.py", line 192, in close
+    raise e
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_browser.py", line 189, in close
+    await self._channel.send("close", {"reason": reason})
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 59, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 520, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Browser.close: Connection closed while reading from the driver
+
+2024-11-20 23:30:03.840 | ERROR    | uvicorn:shutdown:73 - Application shutdown failed. Exiting.
+2024-11-20 23:30:05.450 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_logpile"
+2024-11-20 23:30:05.455 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_localstore"
+2024-11-20 23:30:05.472 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_uninfo"
+2024-11-20 23:30:05.584 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_apscheduler"
+2024-11-20 23:30:05.632 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_zxpix"
+2024-11-20 23:30:05.733 | INFO     | nonebot_plugin_leetcode2:<module>:238 - [LC查询] 新建计划任务成功！！  id:leetcode_0，时间为:{'HOUR': 8, 'MINUTE': 30}.
+2024-11-20 23:30:05.733 | INFO     | nonebot_plugin_leetcode2:<module>:238 - [LC查询] 新建计划任务成功！！  id:leetcode_1，时间为:{'HOUR': 20, 'MINUTE': 30}.
+2024-11-20 23:30:05.733 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_leetcode2"
+2024-11-20 23:30:05.734 | SUCCESS  | nonebot:run:336 - Running NoneBot...
+2024-11-20 23:30:05.749 | INFO     | uvicorn:_serve:82 - Started server process [42588]
+2024-11-20 23:30:05.750 | INFO     | uvicorn:startup:48 - Waiting for application startup.
+2024-11-20 23:30:05.756 | INFO     | nonebot_plugin_apscheduler:_start_scheduler:35 - Scheduler Started
+2024-11-20 23:30:06.023 | INFO     | nonebot_plugin_htmlrender:launch_browser:56 - 使用 chromium 启动
+2024-11-20 23:30:06.234 | INFO     | nonebot_plugin_htmlrender:init:39 - Browser Started.
+2024-11-20 23:30:06.234 | INFO     | uvicorn:startup:62 - Application startup complete.
+2024-11-20 23:30:06.235 | INFO     | uvicorn:_log_started_message:214 - Uvicorn running on http://127.0.0.1:7070 (Press CTRL+C to quit)
+2024-11-20 23:30:09.979 | INFO     | uvicorn:asgi_send:271 - ('127.0.0.1', 7876) - "WebSocket /onebot/v11/ws" [accepted]
+2024-11-20 23:30:09.979 | INFO     | nonebot:log:336 - OneBot V11 | Bot 3247591708 connected
+2024-11-20 23:30:09.980 | INFO     | websockets:handshake:642 - connection open
+2024-11-20 23:30:12.107 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 20097654 from 2559815776 '.pix'
+2024-11-20 23:30:12.127 | INFO     | nonebot:_run_matcher:435 - Event will be handled by AlconnaMatcher(type='', module=nonebot_plugin_zxpix.pix, lineno=43)
+2024-11-20 23:30:15.867 | INFO     | nonebot_plugin_zxpix:download_file:193 - 下载 https://i.suimoe.com/img-master/img/2023/02/24/00/22/29/105653522_p0_master1200.jpg 成功.. Path：D:\NoneBot\Rift\data\nonebot\cache\nonebot_plugin_zxpix\pix_105653522_233.png
+2024-11-20 23:30:17.321 | INFO     | nonebot_plugin_zxpix:_:112 - pix调用 tags: ()
+2024-11-20 23:30:17.321 | INFO     | nonebot_plugin_zxpix:_:113 - pix调用 tags: ()
+2024-11-20 23:30:17.323 | INFO     | nonebot:simple_run:846 - AlconnaMatcher(type='', module=nonebot_plugin_zxpix.pix, lineno=43) running complete
+2024-11-20 23:32:34.595 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 20230243 from 2559815776 'pix图库'
+2024-11-20 23:32:34.603 | INFO     | nonebot:_run_matcher:435 - Event will be handled by AlconnaMatcher(type='', module=nonebot_plugin_zxpix.pix_info, lineno=9)
+2024-11-20 23:32:37.311 | INFO     | nonebot_plugin_zxpix:_:31 - PIX 查看PIX图库 tags: ()
+2024-11-20 23:32:37.311 | INFO     | nonebot:simple_run:846 - AlconnaMatcher(type='', module=nonebot_plugin_zxpix.pix_info, lineno=9) running complete
+2024-11-20 23:37:47.564 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 20346146 from 2559815776 '.啊啊啊 0'
+2024-11-20 23:37:47.580 | INFO     | nonebot:_run_matcher:435 - Event will be handled by Matcher(type='message', module=nonebot_plugin_random_stereotypes.__main__, lineno=154)
+2024-11-20 23:37:48.414 | INFO     | nonebot:simple_run:846 - Matcher(type='message', module=nonebot_plugin_random_stereotypes.__main__, lineno=154) running complete
+2024-11-20 23:43:24.671 | INFO     | uvicorn:shutdown:262 - Shutting down
+2024-11-20 23:43:24.672 | WARNING  | nonebot:log:336 - OneBot V11 | WebSocket for Bot 3247591708 closed by peer
+2024-11-20 23:43:24.672 | INFO     | websockets:handler:263 - connection closed
+2024-11-20 23:43:24.779 | INFO     | uvicorn:shutdown:67 - Waiting for application shutdown.
+2024-11-20 23:43:24.790 | ERROR    | uvicorn:send:134 - Traceback (most recent call last):
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\starlette\routing.py", line 693, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 211, in __aexit__
+    await anext(self.gen)
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\drivers\fastapi.py", line 159, in _lifespan_manager
+    await self._lifespan.shutdown()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\internal\driver\_lifespan.py", line 81, in shutdown
+    await self._run_lifespan_func(reversed(self._shutdown_funcs))
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\internal\driver\_lifespan.py", line 55, in _run_lifespan_func
+    await cast(ASYNC_LIFESPAN_FUNC, func)()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot_plugin_htmlrender\__init__.py", line 45, in shutdown
+    await shutdown_browser()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot_plugin_htmlrender\browser.py", line 79, in shutdown_browser
+    await _browser.close()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 14173, in close
+    return mapping.from_maybe_impl(await self._impl_obj.close(reason=reason))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_browser.py", line 192, in close
+    raise e
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_browser.py", line 189, in close
+    await self._channel.send("close", {"reason": reason})
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 59, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 520, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Browser.close: Connection closed while reading from the driver
+
+2024-11-20 23:43:24.791 | ERROR    | uvicorn:shutdown:73 - Application shutdown failed. Exiting.
+2024-11-20 23:43:26.394 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_logpile"
+2024-11-20 23:43:26.505 | INFO     | nonebot_plugin_leetcode2:<module>:238 - [LC查询] 新建计划任务成功！！  id:leetcode_0，时间为:{'HOUR': 8, 'MINUTE': 30}.
+2024-11-20 23:43:26.506 | INFO     | nonebot_plugin_leetcode2:<module>:238 - [LC查询] 新建计划任务成功！！  id:leetcode_1，时间为:{'HOUR': 20, 'MINUTE': 30}.
+2024-11-20 23:43:26.506 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_leetcode2"
+2024-11-20 23:43:26.525 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_updater"
+2024-11-20 23:43:26.529 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_waiter"
+2024-11-20 23:43:26.556 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_userinfo"
+2024-11-20 23:43:26.580 | WARNING  | nonebot_plugin_random_stereotypes:<module>:115 - Cannot construct meme generator, will disable meme feature
+2024-11-20 23:43:26.581 | WARNING  | nonebot_plugin_random_stereotypes:<module>:116 - Cannot find usable meme source, consider running `pip install nonebot-plugin-random-stereotypes[meme]` to use embed source
+2024-11-20 23:43:26.592 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_random_stereotypes"
+2024-11-20 23:43:26.714 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_abstract"
+2024-11-20 23:43:26.723 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_jrrp2"
+2024-11-20 23:43:26.723 | SUCCESS  | nonebot:run:336 - Running NoneBot...
+2024-11-20 23:43:26.740 | INFO     | uvicorn:_serve:82 - Started server process [51420]
+2024-11-20 23:43:26.740 | INFO     | uvicorn:startup:48 - Waiting for application startup.
+2024-11-20 23:43:26.745 | INFO     | nonebot_plugin_apscheduler:_start_scheduler:35 - Scheduler Started
+2024-11-20 23:43:27.025 | INFO     | nonebot_plugin_htmlrender:launch_browser:56 - 使用 chromium 启动
+2024-11-20 23:43:27.298 | INFO     | nonebot_plugin_htmlrender:init:39 - Browser Started.
+2024-11-20 23:43:27.300 | INFO     | uvicorn:startup:62 - Application startup complete.
+2024-11-20 23:43:27.301 | INFO     | uvicorn:_log_started_message:214 - Uvicorn running on http://127.0.0.1:7070 (Press CTRL+C to quit)
+2024-11-20 23:43:31.138 | INFO     | uvicorn:asgi_send:271 - ('127.0.0.1', 7247) - "WebSocket /onebot/v11/ws" [accepted]
+2024-11-20 23:43:31.139 | INFO     | nonebot:log:336 - OneBot V11 | Bot 3247591708 connected
+2024-11-20 23:43:31.140 | INFO     | websockets:handshake:642 - connection open
+2024-11-20 23:43:37.425 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 20496886 from 2559815776 '.pixiv.add'
+2024-11-20 23:44:04.634 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 20545544 from 2559815776 '.pixiv.rand'
+2024-11-20 23:44:04.641 | INFO     | nonebot:_run_matcher:435 - Event will be handled by AlconnaMatcher(type='', module=nonebot_plugin_zxpix.pix, lineno=43)
+2024-11-20 23:44:15.372 | INFO     | nonebot_plugin_zxpix:download_file:193 - 下载 https://i.suimoe.com/img-master/img/2023/12/28/00/01/55/114613696_p6_master1200.jpg 成功.. Path：D:\NoneBot\Rift\data\nonebot\cache\nonebot_plugin_zxpix\pix_114613696_629.png
+2024-11-20 23:44:17.439 | INFO     | nonebot_plugin_zxpix:_:112 - pix调用 tags: ()
+2024-11-20 23:44:17.440 | INFO     | nonebot_plugin_zxpix:_:113 - pix调用 tags: ()
+2024-11-20 23:44:17.440 | INFO     | nonebot:simple_run:846 - AlconnaMatcher(type='', module=nonebot_plugin_zxpix.pix, lineno=43) running complete
+2024-11-20 23:44:50.874 | INFO     | uvicorn:shutdown:262 - Shutting down
+2024-11-20 23:44:50.875 | WARNING  | nonebot:log:336 - OneBot V11 | WebSocket for Bot 3247591708 closed by peer
+2024-11-20 23:44:50.875 | INFO     | websockets:handler:263 - connection closed
+2024-11-20 23:44:50.984 | INFO     | uvicorn:shutdown:67 - Waiting for application shutdown.
+2024-11-20 23:44:50.994 | ERROR    | uvicorn:send:134 - Traceback (most recent call last):
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\starlette\routing.py", line 693, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 211, in __aexit__
+    await anext(self.gen)
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\drivers\fastapi.py", line 159, in _lifespan_manager
+    await self._lifespan.shutdown()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\internal\driver\_lifespan.py", line 81, in shutdown
+    await self._run_lifespan_func(reversed(self._shutdown_funcs))
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\internal\driver\_lifespan.py", line 55, in _run_lifespan_func
+    await cast(ASYNC_LIFESPAN_FUNC, func)()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot_plugin_htmlrender\__init__.py", line 45, in shutdown
+    await shutdown_browser()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot_plugin_htmlrender\browser.py", line 79, in shutdown_browser
+    await _browser.close()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 14173, in close
+    return mapping.from_maybe_impl(await self._impl_obj.close(reason=reason))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_browser.py", line 192, in close
+    raise e
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_browser.py", line 189, in close
+    await self._channel.send("close", {"reason": reason})
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 59, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 520, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Browser.close: Connection closed while reading from the driver
+
+2024-11-20 23:44:50.994 | ERROR    | uvicorn:shutdown:73 - Application shutdown failed. Exiting.
+2024-11-20 23:44:52.848 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_logpile"
+2024-11-20 23:44:52.852 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_waiter"
+2024-11-20 23:44:52.878 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_userinfo"
+2024-11-20 23:44:52.903 | WARNING  | nonebot_plugin_random_stereotypes:<module>:115 - Cannot construct meme generator, will disable meme feature
+2024-11-20 23:44:52.904 | WARNING  | nonebot_plugin_random_stereotypes:<module>:116 - Cannot find usable meme source, consider running `pip install nonebot-plugin-random-stereotypes[meme]` to use embed source
+2024-11-20 23:44:52.915 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_random_stereotypes"
+2024-11-20 23:44:52.916 | SUCCESS  | nonebot:run:336 - Running NoneBot...
+2024-11-20 23:44:52.932 | INFO     | uvicorn:_serve:82 - Started server process [51216]
+2024-11-20 23:44:52.933 | INFO     | uvicorn:startup:48 - Waiting for application startup.
+2024-11-20 23:44:53.212 | INFO     | nonebot_plugin_htmlrender:launch_browser:56 - 使用 chromium 启动
+2024-11-20 23:44:53.420 | INFO     | nonebot_plugin_htmlrender:init:39 - Browser Started.
+2024-11-20 23:44:53.422 | INFO     | nonebot_plugin_apscheduler:_start_scheduler:35 - Scheduler Started
+2024-11-20 23:44:53.426 | INFO     | uvicorn:startup:62 - Application startup complete.
+2024-11-20 23:44:53.427 | INFO     | uvicorn:_log_started_message:214 - Uvicorn running on http://127.0.0.1:7070 (Press CTRL+C to quit)
+2024-11-20 23:44:56.284 | INFO     | uvicorn:asgi_send:271 - ('127.0.0.1', 6482) - "WebSocket /onebot/v11/ws" [accepted]
+2024-11-20 23:44:56.285 | INFO     | nonebot:log:336 - OneBot V11 | Bot 3247591708 connected
+2024-11-20 23:44:56.286 | INFO     | websockets:handshake:642 - connection open
+2024-11-20 23:45:00.875 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 20689874 from 2559815776 '.pixiv.add'
+2024-11-20 23:45:16.372 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 20725777 from 2559815776 '.pixiv.info'
+2024-11-20 23:45:16.380 | INFO     | nonebot:_run_matcher:435 - Event will be handled by AlconnaMatcher(type='', module=nonebot_plugin_zxpix.pix_info, lineno=9)
+2024-11-20 23:45:18.821 | INFO     | nonebot_plugin_zxpix:_:32 - PIX 查看PIX图库 tags: ()
+2024-11-20 23:45:18.821 | INFO     | nonebot:simple_run:846 - AlconnaMatcher(type='', module=nonebot_plugin_zxpix.pix_info, lineno=9) running complete
+2024-11-20 23:48:24.950 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.group.normal]: Message -1410471927 from 2079400163@[群:1042164649] '这陈奕迅也是风韵犹存啊'
+2024-11-20 23:48:54.334 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.group.normal]: Message -1410425510 from 2079400163@[群:1042164649] '.啊啊啊十年'
+2024-11-20 23:48:54.343 | INFO     | nonebot:_run_matcher:435 - Event will be handled by Matcher(type='message', module=nonebot_plugin_random_stereotypes.__main__, lineno=154)
+2024-11-20 23:48:55.194 | INFO     | nonebot:simple_run:846 - Matcher(type='message', module=nonebot_plugin_random_stereotypes.__main__, lineno=154) running complete
+2024-11-20 23:50:17.841 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.group.normal]: Message -1410292074 from 2641283261@[群:1042164649] '逆天'
+2024-11-20 23:50:45.821 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.group.normal]: Message -1410260269 from 2641283261@[群:1042164649] '.啊啊啊 哥哥酱'
+2024-11-20 23:50:45.837 | INFO     | nonebot:_run_matcher:435 - Event will be handled by Matcher(type='message', module=nonebot_plugin_random_stereotypes.__main__, lineno=154)
+2024-11-20 23:50:47.022 | INFO     | nonebot:simple_run:846 - Matcher(type='message', module=nonebot_plugin_random_stereotypes.__main__, lineno=154) running complete
+2024-11-20 23:51:02.780 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.group.normal]: Message -1410103796 from 2641283261@[群:1042164649] '.啊啊啊 奶龙桑'
+2024-11-20 23:51:02.787 | INFO     | nonebot:_run_matcher:435 - Event will be handled by Matcher(type='message', module=nonebot_plugin_random_stereotypes.__main__, lineno=154)
+2024-11-20 23:51:03.518 | INFO     | nonebot:simple_run:846 - Matcher(type='message', module=nonebot_plugin_random_stereotypes.__main__, lineno=154) running complete
+2024-11-20 23:52:36.217 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 20902007 from 2559815776 '.plugins.install steam-game'
+2024-11-20 23:52:36.223 | INFO     | nonebot:_run_matcher:435 - Event will be handled by AlconnaMatcher(type='', module=nonebot_plugin_updater.commands, lineno=50)
+2024-11-20 23:52:42.228 | INFO     | nonebot:simple_run:846 - AlconnaMatcher(type='', module=nonebot_plugin_updater.commands, lineno=50) running complete
+2024-11-20 23:52:42.228 | ERROR    | nonebot:_run_matcher:460 - Running AlconnaMatcher(type='', module=nonebot_plugin_updater.commands, lineno=50) failed.
+Traceback (most recent call last):
+
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\httpx\_transports\default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\httpx\_transports\default.py", line 377, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+                 │    │     │                    └ <Request [b'GET']>
+                 │    │     └ <function AsyncConnectionPool.handle_async_request at 0x0000015902F70E00>
+                 │    └ <AsyncHTTPProxy [Requests: 0 active, 0 queued | Connections: 0 active, 0 idle]>
+                 └ <httpx.AsyncHTTPTransport object at 0x000001590475E9D0>
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\httpcore\_async\connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\httpcore\_async\connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+                     │          └ <function AsyncTunnelHTTPConnection.handle_async_request at 0x0000015902F71F80>
+                     └ <AsyncTunnelHTTPConnection ['http://127.0.0.1:707', HTTP/1.1, CLOSED, Request Count: 1]>
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\httpcore\_async\http_proxy.py", line 316, in handle_async_request
+    stream = await stream.start_tls(**kwargs)
+                   │      │           └ {'ssl_context': <ssl.SSLContext object at 0x0000015904366B10>, 'server_hostname': 'ghp.ci', 'timeout': 5.0}
+                   │      └ <function AsyncHTTP11UpgradeStream.start_tls at 0x0000015902F67E20>
+                   └ <httpcore._async.http11.AsyncHTTP11UpgradeStream object at 0x0000015904A22810>
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\httpcore\_async\http11.py", line 376, in start_tls
+    return await self._stream.start_tls(ssl_context, server_hostname, timeout)
+                 │    │       │         │            │                └ 5.0
+                 │    │       │         │            └ 'ghp.ci'
+                 │    │       │         └ <ssl.SSLContext object at 0x0000015904366B10>
+                 │    │       └ <function AnyIOStream.start_tls at 0x0000015902F84B80>
+                 │    └ <httpcore._backends.anyio.AnyIOStream object at 0x0000015904A11B10>
+                 └ <httpcore._async.http11.AsyncHTTP11UpgradeStream object at 0x0000015904A22810>
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\httpcore\_backends\anyio.py", line 67, in start_tls
+    with map_exceptions(exc_map):
+         │              └ {<class 'TimeoutError'>: <class 'httpcore.ConnectTimeout'>, <class 'anyio.BrokenResourceError'>: <class 'httpcore.ConnectErro...
+         └ <function map_exceptions at 0x0000015902DF6FC0>
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 155, in __exit__
+    self.gen.throw(typ, value, traceback)
+    │    │   │     │    │      └ <traceback object at 0x0000015904560E40>
+    │    │   │     │    └ TimeoutError()
+    │    │   │     └ <class 'TimeoutError'>
+    │    │   └ <method 'throw' of 'generator' objects>
+    │    └ <generator object map_exceptions at 0x0000015904A68940>
+    └ <contextlib._GeneratorContextManager object at 0x000001590454CB90>
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+          └ <class 'httpcore.ConnectTimeout'>
+
+httpcore.ConnectTimeout
+
+
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+
+  File "<string>", line 17, in <module>
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\__init__.py", line 337, in run
+    get_driver().run(*args, **kwargs)
+    │                 │       └ {}
+    │                 └ ()
+    └ <function get_driver at 0x000001597DF58180>
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\drivers\fastapi.py", line 188, in run
+    uvicorn.run(
+    │       └ <function run at 0x00000159028B2AC0>
+    └ <module 'uvicorn' from 'D:\\NoneBot\\Rift\\.venv\\Lib\\site-packages\\uvicorn\\__init__.py'>
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\uvicorn\main.py", line 579, in run
+    server.run()
+    │      └ <function Server.run at 0x00000159028B2CA0>
+    └ <uvicorn.server.Server object at 0x0000015904131190>
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\uvicorn\server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ None
+           │       │   │    └ <function Server.serve at 0x00000159028B2D40>
+           │       │   └ <uvicorn.server.Server object at 0x0000015904131190>
+           │       └ <function run at 0x000001597F0BE520>
+           └ <module 'asyncio' from 'C:\\Users\\Flo\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\__init__.py'>
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           │      │   └ <coroutine object Server.serve at 0x000001590421F880>
+           │      └ <function Runner.run at 0x000001597F0DFCE0>
+           └ <asyncio.runners.Runner object at 0x0000015903922310>
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<Server.serve() running at D:\NoneBot\Rift\.venv\Lib\site-packages\uvicorn\server.py:69> wai...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x000001597F0DD800>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x0000015903922310>
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 640, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x000001597F143560>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 607, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000001597F0DF560>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1922, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000001597EC87420>
+    └ <Handle <TaskStepMethWrapper object at 0x00000159043CF2B0>()>
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x00000159043CF2B0>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x00000159043CF2B0>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x00000159043CF2B0>()>
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\utils.py", line 254, in run_coro_with_shield
+    return await coro
+                 └ <coroutine object check_and_run_matcher at 0x0000015904323E20>
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\message.py", line 506, in check_and_run_matcher
+    await _run_matcher(
+          └ <function _run_matcher at 0x000001590255CAE0>
+> File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\message.py", line 458, in _run_matcher
+    await matcher.run(bot, event, state, stack, dependency_cache)
+          │       │   │    │      │      │      └ {<function _command at 0x000001597FFB6980>: <nonebot.internal.params.DependencyCache object at 0x00000159040EFDD0>, <function...
+          │       │   │    │      │      └ <contextlib.AsyncExitStack object at 0x00000159035DF350>
+          │       │   │    │      └ {'_prefix': {'command': None, 'raw_command': None, 'command_arg': None, 'command_start': None, 'command_whitespace': None}, '...
+          │       │   │    └ PrivateMessageEvent(time=1732117956, self_id=3247591708, post_type='message', sub_type='friend', user_id=2559815776, message_...
+          │       │   └ Bot(type='OneBot V11', self_id='3247591708')
+          │       └ <function Matcher.run at 0x000001597FFB6840>
+          └ AlconnaMatcher(type='', module=nonebot_plugin_updater.commands, lineno=50)
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\internal\matcher\matcher.py", line 900, in run
+    await self.simple_run(bot, event, state, stack, dependency_cache)
+          │    │          │    │      │      │      └ {<function _command at 0x000001597FFB6980>: <nonebot.internal.params.DependencyCache object at 0x00000159040EFDD0>, <function...
+          │    │          │    │      │      └ <contextlib.AsyncExitStack object at 0x00000159035DF350>
+          │    │          │    │      └ {'_prefix': {'command': None, 'raw_command': None, 'command_arg': None, 'command_start': None, 'command_whitespace': None}, '...
+          │    │          │    └ PrivateMessageEvent(time=1732117956, self_id=3247591708, post_type='message', sub_type='friend', user_id=2559815776, message_...
+          │    │          └ Bot(type='OneBot V11', self_id='3247591708')
+          │    └ <function Matcher.simple_run at 0x000001597FFB67A0>
+          └ AlconnaMatcher(type='', module=nonebot_plugin_updater.commands, lineno=50)
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\internal\matcher\matcher.py", line 837, in simple_run
+    await handler(
+          └ Dependent(call=_)
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\dependencies\__init__.py", line 113, in __call__
+    return await cast(Callable[..., Awaitable[R]], self.call)(**values)
+                 │    │             │         │    │    │       └ {'plugin_name': Match(steam-game, True)}
+                 │    │             │         │    │    └ <function _ at 0x00000159039DF600>
+                 │    │             │         │    └ Dependent(call=_)
+                 │    │             │         └ ~R
+                 │    │             └ <class 'collections.abc.Awaitable'>
+                 │    └ typing.Callable
+                 └ <function cast at 0x000001597E611B20>
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot_plugin_updater\commands.py", line 140, in _
+    store_plugins: list[NBPluginMetadata] = await get_store_plugins()
+                        │                         └ <function get_store_plugins at 0x00000159035B3EC0>
+                        └ <class 'nonebot_plugin_updater.utils.models.NBPluginMetadata'>
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot_plugin_updater\utils\common.py", line 20, in get_store_plugins
+    response: httpx.Response = await ctx.get(
+              │     │                │   └ <function AsyncClient.get at 0x0000015902F90860>
+              │     │                └ <httpx.AsyncClient object at 0x000001590454C8D0>
+              │     └ <class 'httpx.Response'>
+              └ <module 'httpx' from 'D:\\NoneBot\\Rift\\.venv\\Lib\\site-packages\\httpx\\__init__.py'>
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\httpx\_client.py", line 1814, in get
+    return await self.request(
+                 │    └ <function AsyncClient.request at 0x0000015902F90400>
+                 └ <httpx.AsyncClient object at 0x000001590454C8D0>
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\httpx\_client.py", line 1585, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+                 │    │    │             │                      └ <httpx._client.UseClientDefault object at 0x0000015902DEE710>
+                 │    │    │             └ <httpx._client.UseClientDefault object at 0x0000015902DEE710>
+                 │    │    └ <Request('GET', 'https://ghp.ci/https://raw.githubusercontent.com/nonebot/registry/results/plugins.json')>
+                 │    └ <function AsyncClient.send at 0x0000015902F905E0>
+                 └ <httpx.AsyncClient object at 0x000001590454C8D0>
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\httpx\_client.py", line 1674, in send
+    response = await self._send_handling_auth(
+                     │    └ <function AsyncClient._send_handling_auth at 0x0000015902F90680>
+                     └ <httpx.AsyncClient object at 0x000001590454C8D0>
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\httpx\_client.py", line 1702, in _send_handling_auth
+    response = await self._send_handling_redirects(
+                     │    └ <function AsyncClient._send_handling_redirects at 0x0000015902F90720>
+                     └ <httpx.AsyncClient object at 0x000001590454C8D0>
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\httpx\_client.py", line 1739, in _send_handling_redirects
+    response = await self._send_single_request(request)
+                     │    │                    └ <Request('GET', 'https://ghp.ci/https://raw.githubusercontent.com/nonebot/registry/results/plugins.json')>
+                     │    └ <function AsyncClient._send_single_request at 0x0000015902F907C0>
+                     └ <httpx.AsyncClient object at 0x000001590454C8D0>
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\httpx\_client.py", line 1776, in _send_single_request
+    response = await transport.handle_async_request(request)
+                     │         │                    └ <Request('GET', 'https://ghp.ci/https://raw.githubusercontent.com/nonebot/registry/results/plugins.json')>
+                     │         └ <function AsyncHTTPTransport.handle_async_request at 0x0000015902F856C0>
+                     └ <httpx.AsyncHTTPTransport object at 0x000001590475E9D0>
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\httpx\_transports\default.py", line 376, in handle_async_request
+    with map_httpcore_exceptions():
+         └ <function map_httpcore_exceptions at 0x0000015902DF4E00>
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 155, in __exit__
+    self.gen.throw(typ, value, traceback)
+    │    │   │     │    │      └ <traceback object at 0x0000015904A87780>
+    │    │   │     │    └ ConnectTimeout(TimeoutError())
+    │    │   │     └ <class 'httpcore.ConnectTimeout'>
+    │    │   └ <method 'throw' of 'generator' objects>
+    │    └ <generator object map_httpcore_exceptions at 0x00000159043C3C40>
+    └ <contextlib._GeneratorContextManager object at 0x00000159046D8E50>
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\httpx\_transports\default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+          │          └ ''
+          └ <class 'httpx.ConnectTimeout'>
+
+httpx.ConnectTimeout
+2024-11-20 23:53:52.850 | INFO     | uvicorn:shutdown:262 - Shutting down
+2024-11-20 23:53:52.851 | WARNING  | nonebot:log:336 - OneBot V11 | WebSocket for Bot 3247591708 closed by peer
+2024-11-20 23:53:52.853 | INFO     | websockets:handler:263 - connection closed
+2024-11-20 23:53:52.958 | INFO     | uvicorn:shutdown:67 - Waiting for application shutdown.
+2024-11-20 23:53:52.958 | INFO     | nonebot_plugin_apscheduler:_shutdown_scheduler:41 - Scheduler Shutdown
+2024-11-20 23:53:52.968 | ERROR    | uvicorn:send:134 - Traceback (most recent call last):
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\starlette\routing.py", line 693, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 211, in __aexit__
+    await anext(self.gen)
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\drivers\fastapi.py", line 159, in _lifespan_manager
+    await self._lifespan.shutdown()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\internal\driver\_lifespan.py", line 81, in shutdown
+    await self._run_lifespan_func(reversed(self._shutdown_funcs))
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot\internal\driver\_lifespan.py", line 55, in _run_lifespan_func
+    await cast(ASYNC_LIFESPAN_FUNC, func)()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot_plugin_htmlrender\__init__.py", line 45, in shutdown
+    await shutdown_browser()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\nonebot_plugin_htmlrender\browser.py", line 79, in shutdown_browser
+    await _browser.close()
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 14173, in close
+    return mapping.from_maybe_impl(await self._impl_obj.close(reason=reason))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_browser.py", line 192, in close
+    raise e
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_browser.py", line 189, in close
+    await self._channel.send("close", {"reason": reason})
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 59, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NoneBot\Rift\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 520, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Browser.close: Connection closed while reading from the driver
+
+2024-11-20 23:53:52.968 | ERROR    | uvicorn:shutdown:73 - Application shutdown failed. Exiting.
+2024-11-20 23:54:03.819 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_logpile"
+2024-11-20 23:54:03.888 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_alconna:uniseg" from "nonebot_plugin_alconna.uniseg"
+2024-11-20 23:54:03.939 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_alconna"
+2024-11-20 23:54:03.969 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_updater"
+2024-11-20 23:54:04.191 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_apscheduler"
+2024-11-20 23:54:04.195 | INFO     | nonebot_plugin_leetcode2:<module>:238 - [LC查询] 新建计划任务成功！！  id:leetcode_0，时间为:{'HOUR': 8, 'MINUTE': 30}.
+2024-11-20 23:54:04.196 | INFO     | nonebot_plugin_leetcode2:<module>:238 - [LC查询] 新建计划任务成功！！  id:leetcode_1，时间为:{'HOUR': 20, 'MINUTE': 30}.
+2024-11-20 23:54:04.196 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_leetcode2"
+2024-11-20 23:54:04.320 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_abstract"
+2024-11-20 23:54:04.325 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_localstore"
+2024-11-20 23:54:04.342 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_uninfo"
+2024-11-20 23:54:04.377 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_zxpix"
+2024-11-20 23:54:04.386 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_jrrp2"
+2024-11-20 23:54:04.389 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_waiter"
+2024-11-20 23:54:04.415 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_userinfo"
+2024-11-20 23:54:04.439 | WARNING  | nonebot_plugin_random_stereotypes:<module>:115 - Cannot construct meme generator, will disable meme feature
+2024-11-20 23:54:04.439 | WARNING  | nonebot_plugin_random_stereotypes:<module>:116 - Cannot find usable meme source, consider running `pip install nonebot-plugin-random-stereotypes[meme]` to use embed source
+2024-11-20 23:54:04.450 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_random_stereotypes"
+2024-11-20 23:54:04.450 | SUCCESS  | nonebot:run:336 - Running NoneBot...
+2024-11-20 23:54:04.466 | INFO     | uvicorn:_serve:82 - Started server process [52216]
+2024-11-20 23:54:04.467 | INFO     | uvicorn:startup:48 - Waiting for application startup.
+2024-11-20 23:54:04.738 | INFO     | nonebot_plugin_htmlrender:launch_browser:56 - 使用 chromium 启动
+2024-11-20 23:54:05.000 | INFO     | nonebot_plugin_htmlrender:init:39 - Browser Started.
+2024-11-20 23:54:05.002 | INFO     | nonebot_plugin_apscheduler:_start_scheduler:35 - Scheduler Started
+2024-11-20 23:54:05.005 | INFO     | uvicorn:startup:62 - Application startup complete.
+2024-11-20 23:54:05.005 | INFO     | uvicorn:_log_started_message:214 - Uvicorn running on http://127.0.0.1:7070 (Press CTRL+C to quit)
+2024-11-20 23:54:09.006 | INFO     | uvicorn:asgi_send:271 - ('127.0.0.1', 10060) - "WebSocket /onebot/v11/ws" [accepted]
+2024-11-20 23:54:09.006 | INFO     | nonebot:log:336 - OneBot V11 | Bot 3247591708 connected
+2024-11-20 23:54:09.006 | INFO     | websockets:handshake:642 - connection open
+2024-11-20 23:54:19.858 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 20958650 from 2559815776 '.plugins.install zxreport'
+2024-11-20 23:54:19.875 | INFO     | nonebot:_run_matcher:435 - Event will be handled by AlconnaMatcher(type='', module=nonebot_plugin_updater.commands, lineno=50)
+2024-11-20 23:54:23.442 | INFO     | nonebot:simple_run:846 - AlconnaMatcher(type='', module=nonebot_plugin_updater.commands, lineno=50) running complete
+2024-11-20 23:55:27.343 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 21078064 from 2559815776 '.plugins.install haruka_bot'
+2024-11-20 23:55:27.351 | INFO     | nonebot:_run_matcher:435 - Event will be handled by AlconnaMatcher(type='', module=nonebot_plugin_updater.commands, lineno=50)
+2024-11-20 23:55:30.873 | INFO     | nonebot:simple_run:846 - AlconnaMatcher(type='', module=nonebot_plugin_updater.commands, lineno=50) running complete
+2024-11-20 23:56:18.536 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 3247591708 | [message.private.friend]: Message 21184827 from 2559815776 '.plugins.install nonebot-plugin-leetcode'
+2024-11-20 23:56:18.544 | INFO     | nonebot:_run_matcher:435 - Event will be handled by AlconnaMatcher(type='', module=nonebot_plugin_updater.commands, lineno=50)
+2024-11-20 23:56:22.011 | INFO     | uvicorn:shutdown:262 - Shutting down
+2024-11-20 23:56:22.013 | WARNING  | nonebot:log:336 - OneBot V11 | WebSocket for Bot 3247591708 closed by peer
+2024-11-20 23:56:22.014 | INFO     | websockets:handler:263 - connection closed
+2024-11-20 23:56:22.116 | INFO     | uvicorn:shutdown:67 - Waiting for application shutdown.
+2024-11-20 23:56:22.117 | INFO     | nonebot_plugin_apscheduler:_shutdown_scheduler:41 - Scheduler Shutdown
+2024-11-20 23:56:22.250 | INFO     | nonebot_plugin_htmlrender:shutdown:46 - Browser Stopped.
+2024-11-20 23:57:05.637 | INFO     | uvicorn:shutdown:262 - Shutting down
+2024-11-20 23:57:05.751 | INFO     | uvicorn:shutdown:67 - Waiting for application shutdown.
