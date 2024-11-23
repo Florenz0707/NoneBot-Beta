@@ -1,6 +1,6 @@
 [project]
 name = "Rift"
-version = "0.1.0"
+version = "0.1.1"
 description = "Beta_Version"
 readme = "README.md"
 requires-python = ">=3.9, <4.0"
