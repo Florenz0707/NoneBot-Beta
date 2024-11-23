@@ -1,4 +1,5 @@
 /.env.prod
+/TempLog.txt
 logs/
 fonts/
 data/
