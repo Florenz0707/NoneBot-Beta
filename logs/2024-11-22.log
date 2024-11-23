@@ -5216,3 +5216,423 @@ Exception: Browser.close: Connection closed while reading from the driver
 2024-11-22 21:28:59.855 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 2246956661 | [message.private.friend]: Message 835247251 from 2559815776 '.inform test'
 2024-11-22 21:28:59.867 | INFO     | nonebot:_run_matcher:435 - Event will be handled by Matcher(type='message', module=nonebot_plugin_send, lineno=47)
 2024-11-22 21:29:05.939 | INFO     | nonebot:simple_run:846 - Matcher(type='message', module=nonebot_plugin_send, lineno=47) running complete
+2024-11-22 21:58:28.132 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 2246956661 | [message.group.normal]: Message 2000793879 from 1356890337@[群:928654084] '补药实践我口牙'
+2024-11-22 21:58:47.197 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 2246956661 | [message.group.normal]: Message 371243717 from 1356890337@[群:928654084] '[image:summary=[动画表情],file=000001464e61704361744f6e65426f747c4d736746696c657c327c3932383635343...,sub_type=1,file_id=000001464e61704361744f6e65426f747c4d736746696c657c327c3932383635343...,url=https://multimedia.nt.qq.com.cn/download?appid=1407&fileid=EhSsSPwo...,file_size=53768,file_unique=6bf456ced5ca9eb045b099549e17078b]'
+2024-11-22 22:06:53.947 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 2246956661 | [message.group.normal]: Message 1957977267 from 2641283261@[群:928654084] '.啊啊啊 奶龙'
+2024-11-22 22:06:54.032 | INFO     | nonebot:_run_matcher:435 - Event will be handled by Matcher(type='message', module=nonebot_plugin_random_stereotypes.__main__, lineno=154)
+2024-11-22 22:06:59.729 | INFO     | nonebot:simple_run:846 - Matcher(type='message', module=nonebot_plugin_random_stereotypes.__main__, lineno=154) running complete
+2024-11-22 22:07:00.724 | INFO     | nonebot_plugin_leetcode2:send_leetcode_everyday:229 - [LC查询] 获取每日一题成功，题目为find-the-count-of-numbers-which-are-not-special.
+2024-11-22 22:07:01.444 | INFO     | nonebot_plugin_leetcode2:send_leetcode_everyday:231 - [LC查询] 获取题目内容成功。
+2024-11-22 22:07:02.490 | ERROR    | apscheduler:run_coroutine_job:36 - Job "send_leetcode_everyday (trigger: cron[hour='22', minute='7'], next run at: 2024-11-23 22:07:00 CST)" raised an exception
+Traceback (most recent call last):
+
+  File "<string>", line 17, in <module>
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot\__init__.py", line 337, in run
+    get_driver().run(*args, **kwargs)
+    │                 │       └ {}
+    │                 └ ()
+    └ <function get_driver at 0x00000205D79C4AE0>
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot\drivers\fastapi.py", line 188, in run
+    uvicorn.run(
+    │       └ <function run at 0x00000205D89DFCE0>
+    └ <module 'uvicorn' from 'D:\\NoneBot\\Beta\\.venv\\Lib\\site-packages\\uvicorn\\__init__.py'>
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\uvicorn\main.py", line 579, in run
+    server.run()
+    │      └ <function Server.run at 0x00000205D89DFEC0>
+    └ <uvicorn.server.Server object at 0x000002058AC680D0>
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\uvicorn\server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ None
+           │       │   │    └ <function Server.serve at 0x00000205D89DFF60>
+           │       │   └ <uvicorn.server.Server object at 0x000002058AC680D0>
+           │       └ <function run at 0x00000205D76A2520>
+           └ <module 'asyncio' from 'C:\\Users\\Flo\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\__init__.py'>
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           │      │   └ <coroutine object Server.serve at 0x00000205D92EA890>
+           │      └ <function Runner.run at 0x00000205D76C7CE0>
+           └ <asyncio.runners.Runner object at 0x000002058AAF3C50>
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<Server.serve() running at D:\NoneBot\Beta\.venv\Lib\site-packages\uvicorn\server.py:69> wai...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x00000205D76C5800>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x000002058AAF3C50>
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 640, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x00000205D7727560>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 607, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x00000205D76C7560>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1922, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x00000205D5E5F420>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+> File "D:\NoneBot\Beta\.venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+                   │   │     │   │       │   └ <member 'kwargs' of 'Job' objects>
+                   │   │     │   │       └ <Job (id=leetcode_1 name=send_leetcode_everyday)>
+                   │   │     │   └ <member 'args' of 'Job' objects>
+                   │   │     └ <Job (id=leetcode_1 name=send_leetcode_everyday)>
+                   │   └ <member 'func' of 'Job' objects>
+                   └ <Job (id=leetcode_1 name=send_leetcode_everyday)>
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot_plugin_leetcode2\__init__.py", line 239, in send_leetcode_everyday
+    await get_bot().call_api("send_private_msg", user_id=qq, message="今日份的题目来咯~加油哦ww\n" + "\n".join(
+          │                                              └ 631294134
+          └ <function get_bot at 0x00000205D7DCBBA0>
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot\internal\adapter\bot.py", line 176, in call_api
+    raise exception
+          └ ActionFailed(status='failed', retcode=1200, data=None, message='Error: EventChecker Failed: NTEvent serviceAndMethod:NodeIKer...
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot\internal\adapter\bot.py", line 128, in call_api
+    result = await self.adapter._call_api(self, api, **data)
+                   │    │       │         │     │      └ {'user_id': 631294134, 'message': [MessageSegment(type='text', data={'text': '今日份的题目来咯~加油哦ww\n3233.统计不是特殊数字的数字数量\n题目难度：Medium...
+                   │    │       │         │     └ 'send_private_msg'
+                   │    │       │         └ Bot(type='OneBot V11', self_id='2246956661')
+                   │    │       └ <function Adapter._call_api at 0x00000205D7F97060>
+                   │    └ Adapter(name='OneBot V11')
+                   └ Bot(type='OneBot V11', self_id='2246956661')
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot\adapters\onebot\v11\adapter.py", line 175, in _call_api
+    return handle_api_result(await self._result_store.fetch(seq, timeout))
+           │                       │    │             │     │    └ 30.0
+           │                       │    │             │     └ 9
+           │                       │    │             └ <function ResultStore.fetch at 0x00000205D7F96C00>
+           │                       │    └ <nonebot.adapters.onebot.store.ResultStore object at 0x00000205D7FC3C50>
+           │                       └ Adapter(name='OneBot V11')
+           └ <function handle_api_result at 0x00000205D7F14F40>
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot\adapters\onebot\v11\utils.py", line 58, in handle_api_result
+    raise ActionFailed(**result)
+          │              └ {'status': 'failed', 'retcode': 1200, 'data': None, 'message': 'Error: EventChecker Failed: NTEvent serviceAndMethod:NodeIKer...
+          └ <class 'nonebot.adapters.onebot.v11.exception.ActionFailed'>
+
+nonebot.adapters.onebot.v11.exception.ActionFailed: ActionFailed(status='failed', retcode=1200, data=None, message='Error: EventChecker Failed: NTEvent serviceAndMethod:NodeIKernelMsgService/sendMsg ListenerName:NodeIKernelMsgListener/onMsgInfoListUpdate EventRet:\n{\n    "result": -1,\n    "errMsg": "rich media transfer failed"\n}\n', wording='Error: EventChecker Failed: NTEvent serviceAndMethod:NodeIKernelMsgService/sendMsg ListenerName:NodeIKernelMsgListener/onMsgInfoListUpdate EventRet:\n{\n    "result": -1,\n    "errMsg": "rich media transfer failed"\n}\n', echo='9')
+2024-11-22 22:07:20.586 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 2246956661 | [message.group.normal]: Message 2110998934 from 2641283261@[群:928654084] '😝+😭'
+2024-11-22 22:07:20.667 | INFO     | nonebot:_run_matcher:435 - Event will be handled by Matcher(type='message', module=nonebot_plugin_emojimix, lineno=49)
+2024-11-22 22:07:22.310 | INFO     | nonebot:simple_run:846 - Matcher(type='message', module=nonebot_plugin_emojimix, lineno=49) running complete
+2024-11-22 22:18:18.427 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 2246956661 | [message.group.normal]: Message 779457381 from 3247591708@[群:928654084] '已经升级完毕！使用 .help 查看帮助列表吧！'
+2024-11-22 22:23:50.391 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 2246956661 | [message.group.normal]: Message 417845045 from 3247591708@[群:928654084] "北山 玩了 3 小时 51 分钟 DEATH STRANDING DIRECTOR'S CUT 后不玩了"
+2024-11-22 22:25:38.878 | INFO     | uvicorn:shutdown:262 - Shutting down
+2024-11-22 22:25:38.879 | WARNING  | nonebot:log:336 - OneBot V11 | WebSocket for Bot 2246956661 closed by peer
+2024-11-22 22:25:38.879 | INFO     | websockets:handler:263 - connection closed
+2024-11-22 22:25:38.989 | INFO     | uvicorn:shutdown:67 - Waiting for application shutdown.
+2024-11-22 22:25:39.000 | ERROR    | uvicorn:send:134 - Traceback (most recent call last):
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\starlette\routing.py", line 693, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 211, in __aexit__
+    await anext(self.gen)
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot\drivers\fastapi.py", line 159, in _lifespan_manager
+    await self._lifespan.shutdown()
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot\internal\driver\_lifespan.py", line 81, in shutdown
+    await self._run_lifespan_func(reversed(self._shutdown_funcs))
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot\internal\driver\_lifespan.py", line 55, in _run_lifespan_func
+    await cast(ASYNC_LIFESPAN_FUNC, func)()
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot_plugin_htmlrender\__init__.py", line 45, in shutdown
+    await shutdown_browser()
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot_plugin_htmlrender\browser.py", line 79, in shutdown_browser
+    await _browser.close()
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 14173, in close
+    return mapping.from_maybe_impl(await self._impl_obj.close(reason=reason))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\playwright\_impl\_browser.py", line 192, in close
+    raise e
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\playwright\_impl\_browser.py", line 189, in close
+    await self._channel.send("close", {"reason": reason})
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 59, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 520, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Browser.close: Connection closed while reading from the driver
+
+2024-11-22 22:25:39.000 | ERROR    | uvicorn:shutdown:73 - Application shutdown failed. Exiting.
+2024-11-22 22:25:39.001 | INFO     | uvicorn:_serve:92 - Finished server process [25916]
+2024-11-22 22:25:43.671 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_logpile"
+2024-11-22 22:25:43.768 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_htmlrender"
+2024-11-22 22:25:43.795 | INFO     | nonebot_plugin_leetcode2:<module>:253 - [LC查询] 新建计划任务成功！！  id:leetcode_0，时间为:{'HOUR': 8, 'MINUTE': 7}.
+2024-11-22 22:25:43.795 | INFO     | nonebot_plugin_leetcode2:<module>:253 - [LC查询] 新建计划任务成功！！  id:leetcode_1，时间为:{'HOUR': 22, 'MINUTE': 7}.
+2024-11-22 22:25:43.796 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_leetcode2"
+2024-11-22 22:25:43.944 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_abstract"
+2024-11-22 22:25:43.951 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_jrrp2"
+2024-11-22 22:25:43.958 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_send"
+2024-11-22 22:25:43.984 | INFO     | nonebot_plugin_random_stereotypes:import_meme_generator:66 - Using embed meme source
+2024-11-22 22:25:43.991 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_random_stereotypes"
+2024-11-22 22:25:44.069 | SUCCESS  | nonebot:load_plugin:188 - Succeeded to load plugin "nonebot_plugin_steam_info"
+2024-11-22 22:25:44.070 | SUCCESS  | nonebot:run:336 - Running NoneBot...
+2024-11-22 22:25:44.091 | INFO     | uvicorn:_serve:82 - Started server process [10704]
+2024-11-22 22:25:44.092 | INFO     | uvicorn:startup:48 - Waiting for application startup.
+2024-11-22 22:25:44.097 | INFO     | nonebot_plugin_apscheduler:_start_scheduler:35 - Scheduler Started
+2024-11-22 22:25:44.179 | INFO     | nonebot_plugin_orm:check:574 - 没有检测到新的升级操作
+2024-11-22 22:25:44.184 | INFO     | nonebot_plugin_memes:_:42 - 正在检查资源文件...
+2024-11-22 22:25:45.614 | INFO     | nonebot_plugin_htmlrender:launch_browser:56 - 使用 chromium 启动
+2024-11-22 22:25:45.831 | INFO     | nonebot_plugin_htmlrender:init:39 - Browser Started.
+2024-11-22 22:25:45.833 | INFO     | uvicorn:startup:62 - Application startup complete.
+2024-11-22 22:25:45.834 | INFO     | uvicorn:_log_started_message:214 - Uvicorn running on http://127.0.0.1:4024 (Press CTRL+C to quit)
+2024-11-22 22:25:48.896 | INFO     | uvicorn:asgi_send:271 - ('127.0.0.1', 11886) - "WebSocket /onebot/v11/ws" [accepted]
+2024-11-22 22:25:48.896 | INFO     | nonebot:log:336 - OneBot V11 | Bot 2246956661 connected
+2024-11-22 22:25:48.897 | INFO     | websockets:handshake:642 - connection open
+2024-11-22 22:26:03.632 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 2246956661 | [message.private.friend]: Message 1762772303 from 2559815776 '.inform test'
+2024-11-22 22:26:03.649 | INFO     | nonebot:_run_matcher:435 - Event will be handled by Matcher(type='message', module=nonebot_plugin_send, lineno=47)
+2024-11-22 22:26:06.188 | INFO     | nonebot:simple_run:846 - Matcher(type='message', module=nonebot_plugin_send, lineno=47) running complete
+2024-11-22 22:38:52.652 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 2246956661 | [message.group.normal]: Message 1270033269 from 3247591708@[群:928654084] '游戏王小桃 开始玩 Wallpaper Engine 了[image:summary=,file=000001464e61704361744f6e65426f747c4d736746696c657c327c3932383635343...,sub_type=0,file_id=000001464e61704361744f6e65426f747c4d736746696c657c327c3932383635343...,url=https://multimedia.nt.qq.com.cn/download?appid=1407&fileid=EhRPFncd...,file_size=29613,file_unique=be502cde02fd9b78e60996cff9c419a8]'
+2024-11-22 22:40:45.509 | ERROR    | apscheduler:run_coroutine_job:36 - Job "fetch_and_broadcast_steam_info (trigger: interval[0:05:00], next run at: 2024-11-22 22:45:44 CST)" raised an exception
+Traceback (most recent call last):
+
+  File "<string>", line 17, in <module>
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot\__init__.py", line 337, in run
+    get_driver().run(*args, **kwargs)
+    │                 │       └ {}
+    │                 └ ()
+    └ <function get_driver at 0x00000242B0FC8AE0>
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot\drivers\fastapi.py", line 188, in run
+    uvicorn.run(
+    │       └ <function run at 0x00000242B1FDFCE0>
+    └ <module 'uvicorn' from 'D:\\NoneBot\\Beta\\.venv\\Lib\\site-packages\\uvicorn\\__init__.py'>
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\uvicorn\main.py", line 579, in run
+    server.run()
+    │      └ <function Server.run at 0x00000242B1FDFEC0>
+    └ <uvicorn.server.Server object at 0x00000242E47E3950>
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\uvicorn\server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ None
+           │       │   │    └ <function Server.serve at 0x00000242B1FDFF60>
+           │       │   └ <uvicorn.server.Server object at 0x00000242E47E3950>
+           │       └ <function run at 0x00000242B0CA2520>
+           └ <module 'asyncio' from 'C:\\Users\\Flo\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\__init__.py'>
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           │      │   └ <coroutine object Server.serve at 0x00000242B28EA890>
+           │      └ <function Runner.run at 0x00000242B0CC7CE0>
+           └ <asyncio.runners.Runner object at 0x00000242B2943690>
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<Server.serve() running at D:\NoneBot\Beta\.venv\Lib\site-packages\uvicorn\server.py:69> wai...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x00000242B0CC5800>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x00000242B2943690>
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 640, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x00000242B0D27560>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 607, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x00000242B0CC7560>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1922, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x00000242AF45F420>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+> File "D:\NoneBot\Beta\.venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+                   │   │     │   │       │   └ <member 'kwargs' of 'Job' objects>
+                   │   │     │   │       └ <Job (id=update_steam_info name=fetch_and_broadcast_steam_info)>
+                   │   │     │   └ <member 'args' of 'Job' objects>
+                   │   │     └ <Job (id=update_steam_info name=fetch_and_broadcast_steam_info)>
+                   │   └ <member 'func' of 'Job' objects>
+                   └ <Job (id=update_steam_info name=fetch_and_broadcast_steam_info)>
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot_plugin_steam_info\__init__.py", line 259, in fetch_and_broadcast_steam_info
+    await broadcast_steam_info(parent_id, old_players, new_players)
+          │                    │          │            └ [{'steamid': '76561199534288295', 'communityvisibilitystate': 3, 'profilestate': 1, 'personaname': '游戏王小桃', 'profileurl': 'ht...
+          │                    │          └ [{'steamid': '76561199534288295', 'communityvisibilitystate': 3, 'profilestate': 1, 'personaname': '游戏王小桃', 'profileurl': 'ht...
+          │                    └ '798191809'
+          └ <function broadcast_steam_info at 0x00000242E48C8900>
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot_plugin_steam_info\__init__.py", line 225, in broadcast_steam_info
+    await uni_msg.send(
+          │       └ <function UniMessage.send at 0x00000242B2B69940>
+          └ [Text(text='游戏王小桃 开始玩 Wallpaper Engine 了', styles={}), Image(id=None, url=None, path=None, raw=b'\x89PNG\r\n\x1a\n\x00\x00\x0...
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot_plugin_alconna\uniseg\message.py", line 1417, in send
+    res = await fn.send_to(target, bot, msg, **kwargs)
+                │  │       │       │    │      └ {}
+                │  │       │       │    └ [MessageSegment(type='text', data={'text': '游戏王小桃 开始玩 Wallpaper Engine 了'}), MessageSegment(type='image', data={'file': 'base...
+                │  │       │       └ Bot(type='OneBot V11', self_id='2246956661')
+                │  │       └ Target({'id': '798191809', 'parent_id': '798191809', 'channel': True, 'private': False, 'self_id': 'OneBot V11', 'extra': {},...
+                │  └ <function Onebot11MessageExporter.send_to at 0x00000242B2B4D300>
+                └ <nonebot_plugin_alconna.uniseg.adapters.onebot11.exporter.Onebot11MessageExporter object at 0x00000242B2B2E390>
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot_plugin_alconna\uniseg\adapters\onebot11\exporter.py", line 166, in send_to
+    return await bot.send_msg(message_type="group", group_id=int(_target.id), message=message, **kwargs)
+                 │                                               │       │            │          └ {}
+                 │                                               │       │            └ [MessageSegment(type='text', data={'text': '游戏王小桃 开始玩 Wallpaper Engine 了'}), MessageSegment(type='image', data={'file': 'base...
+                 │                                               │       └ '798191809'
+                 │                                               └ Target({'id': '798191809', 'parent_id': '798191809', 'channel': True, 'private': False, 'self_id': 'OneBot V11', 'extra': {},...
+                 └ Bot(type='OneBot V11', self_id='2246956661')
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot\internal\adapter\bot.py", line 176, in call_api
+    raise exception
+          └ ActionFailed(status='failed', retcode=1200, data=None, message='Error: EventChecker Failed: NTEvent serviceAndMethod:NodeIKer...
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot\internal\adapter\bot.py", line 128, in call_api
+    result = await self.adapter._call_api(self, api, **data)
+                   │    │       │         │     │      └ {'message_type': 'group', 'group_id': 798191809, 'message': [MessageSegment(type='text', data={'text': '游戏王小桃 开始玩 Wallpaper E...
+                   │    │       │         │     └ 'send_msg'
+                   │    │       │         └ Bot(type='OneBot V11', self_id='2246956661')
+                   │    │       └ <function Adapter._call_api at 0x00000242B1597060>
+                   │    └ Adapter(name='OneBot V11')
+                   └ Bot(type='OneBot V11', self_id='2246956661')
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot\adapters\onebot\v11\adapter.py", line 175, in _call_api
+    return handle_api_result(await self._result_store.fetch(seq, timeout))
+           │                       │    │             │     │    └ 30.0
+           │                       │    │             │     └ 6
+           │                       │    │             └ <function ResultStore.fetch at 0x00000242B1596C00>
+           │                       │    └ <nonebot.adapters.onebot.store.ResultStore object at 0x00000242B15CD250>
+           │                       └ Adapter(name='OneBot V11')
+           └ <function handle_api_result at 0x00000242B1514F40>
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot\adapters\onebot\v11\utils.py", line 58, in handle_api_result
+    raise ActionFailed(**result)
+          │              └ {'status': 'failed', 'retcode': 1200, 'data': None, 'message': 'Error: EventChecker Failed: NTEvent serviceAndMethod:NodeIKer...
+          └ <class 'nonebot.adapters.onebot.v11.exception.ActionFailed'>
+
+nonebot.adapters.onebot.v11.exception.ActionFailed: ActionFailed(status='failed', retcode=1200, data=None, message='Error: EventChecker Failed: NTEvent serviceAndMethod:NodeIKernelMsgService/sendMsg ListenerName:NodeIKernelMsgListener/onMsgInfoListUpdate EventRet:\n{\n    "result": -1,\n    "errMsg": "rich media transfer failed"\n}\n', wording='Error: EventChecker Failed: NTEvent serviceAndMethod:NodeIKernelMsgService/sendMsg ListenerName:NodeIKernelMsgListener/onMsgInfoListUpdate EventRet:\n{\n    "result": -1,\n    "errMsg": "rich media transfer failed"\n}\n', echo='6')
+2024-11-22 22:43:32.630 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 2246956661 | [message.private.friend]: Message 1747493963 from 2559815776 '.help'
+2024-11-22 22:43:39.424 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 2246956661 | [message.private.friend]: Message 459764244 from 2559815776 '.rift.help'
+2024-11-22 22:43:39.442 | INFO     | nonebot:_run_matcher:435 - Event will be handled by Matcher(type='message', module=nonebot_plugin_send, lineno=15)
+2024-11-22 22:43:39.889 | INFO     | nonebot:simple_run:846 - Matcher(type='message', module=nonebot_plugin_send, lineno=15) running complete
+2024-11-22 22:43:51.316 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 2246956661 | [message.group.normal]: Message 1449255169 from 3247591708@[群:928654084] '游戏王小桃 玩了 5 分钟 Wallpaper Engine 后不玩了'
+2024-11-22 22:45:45.548 | ERROR    | apscheduler:run_coroutine_job:36 - Job "fetch_and_broadcast_steam_info (trigger: interval[0:05:00], next run at: 2024-11-22 22:50:44 CST)" raised an exception
+Traceback (most recent call last):
+
+  File "<string>", line 17, in <module>
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot\__init__.py", line 337, in run
+    get_driver().run(*args, **kwargs)
+    │                 │       └ {}
+    │                 └ ()
+    └ <function get_driver at 0x00000242B0FC8AE0>
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot\drivers\fastapi.py", line 188, in run
+    uvicorn.run(
+    │       └ <function run at 0x00000242B1FDFCE0>
+    └ <module 'uvicorn' from 'D:\\NoneBot\\Beta\\.venv\\Lib\\site-packages\\uvicorn\\__init__.py'>
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\uvicorn\main.py", line 579, in run
+    server.run()
+    │      └ <function Server.run at 0x00000242B1FDFEC0>
+    └ <uvicorn.server.Server object at 0x00000242E47E3950>
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\uvicorn\server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ None
+           │       │   │    └ <function Server.serve at 0x00000242B1FDFF60>
+           │       │   └ <uvicorn.server.Server object at 0x00000242E47E3950>
+           │       └ <function run at 0x00000242B0CA2520>
+           └ <module 'asyncio' from 'C:\\Users\\Flo\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\__init__.py'>
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           │      │   └ <coroutine object Server.serve at 0x00000242B28EA890>
+           │      └ <function Runner.run at 0x00000242B0CC7CE0>
+           └ <asyncio.runners.Runner object at 0x00000242B2943690>
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<Server.serve() running at D:\NoneBot\Beta\.venv\Lib\site-packages\uvicorn\server.py:69> wai...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x00000242B0CC5800>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x00000242B2943690>
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 640, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x00000242B0D27560>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 607, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x00000242B0CC7560>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1922, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x00000242AF45F420>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "C:\Users\Flo\AppData\Local\Programs\Python\Python311\Lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+> File "D:\NoneBot\Beta\.venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+                   │   │     │   │       │   └ <member 'kwargs' of 'Job' objects>
+                   │   │     │   │       └ <Job (id=update_steam_info name=fetch_and_broadcast_steam_info)>
+                   │   │     │   └ <member 'args' of 'Job' objects>
+                   │   │     └ <Job (id=update_steam_info name=fetch_and_broadcast_steam_info)>
+                   │   └ <member 'func' of 'Job' objects>
+                   └ <Job (id=update_steam_info name=fetch_and_broadcast_steam_info)>
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot_plugin_steam_info\__init__.py", line 259, in fetch_and_broadcast_steam_info
+    await broadcast_steam_info(parent_id, old_players, new_players)
+          │                    │          │            └ [{'steamid': '76561199534288295', 'communityvisibilitystate': 3, 'profilestate': 1, 'personaname': '游戏王小桃', 'profileurl': 'ht...
+          │                    │          └ [{'steamid': '76561199534288295', 'communityvisibilitystate': 3, 'profilestate': 1, 'personaname': '游戏王小桃', 'profileurl': 'ht...
+          │                    └ '798191809'
+          └ <function broadcast_steam_info at 0x00000242E48C8900>
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot_plugin_steam_info\__init__.py", line 225, in broadcast_steam_info
+    await uni_msg.send(
+          │       └ <function UniMessage.send at 0x00000242B2B69940>
+          └ [Text(text='游戏王小桃 玩了 5 分钟 Wallpaper Engine 后不玩了', styles={})]
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot_plugin_alconna\uniseg\message.py", line 1417, in send
+    res = await fn.send_to(target, bot, msg, **kwargs)
+                │  │       │       │    │      └ {}
+                │  │       │       │    └ [MessageSegment(type='text', data={'text': '游戏王小桃 玩了 5 分钟 Wallpaper Engine 后不玩了'})]
+                │  │       │       └ Bot(type='OneBot V11', self_id='2246956661')
+                │  │       └ Target({'id': '798191809', 'parent_id': '798191809', 'channel': True, 'private': False, 'self_id': 'OneBot V11', 'extra': {},...
+                │  └ <function Onebot11MessageExporter.send_to at 0x00000242B2B4D300>
+                └ <nonebot_plugin_alconna.uniseg.adapters.onebot11.exporter.Onebot11MessageExporter object at 0x00000242B2B2E390>
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot_plugin_alconna\uniseg\adapters\onebot11\exporter.py", line 166, in send_to
+    return await bot.send_msg(message_type="group", group_id=int(_target.id), message=message, **kwargs)
+                 │                                               │       │            │          └ {}
+                 │                                               │       │            └ [MessageSegment(type='text', data={'text': '游戏王小桃 玩了 5 分钟 Wallpaper Engine 后不玩了'})]
+                 │                                               │       └ '798191809'
+                 │                                               └ Target({'id': '798191809', 'parent_id': '798191809', 'channel': True, 'private': False, 'self_id': 'OneBot V11', 'extra': {},...
+                 └ Bot(type='OneBot V11', self_id='2246956661')
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot\internal\adapter\bot.py", line 176, in call_api
+    raise exception
+          └ ActionFailed(status='failed', retcode=1200, data=None, message='Error: EventChecker Failed: NTEvent serviceAndMethod:NodeIKer...
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot\internal\adapter\bot.py", line 128, in call_api
+    result = await self.adapter._call_api(self, api, **data)
+                   │    │       │         │     │      └ {'message_type': 'group', 'group_id': 798191809, 'message': [MessageSegment(type='text', data={'text': '游戏王小桃 玩了 5 分钟 Wallpap...
+                   │    │       │         │     └ 'send_msg'
+                   │    │       │         └ Bot(type='OneBot V11', self_id='2246956661')
+                   │    │       └ <function Adapter._call_api at 0x00000242B1597060>
+                   │    └ Adapter(name='OneBot V11')
+                   └ Bot(type='OneBot V11', self_id='2246956661')
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot\adapters\onebot\v11\adapter.py", line 175, in _call_api
+    return handle_api_result(await self._result_store.fetch(seq, timeout))
+           │                       │    │             │     │    └ 30.0
+           │                       │    │             │     └ 8
+           │                       │    │             └ <function ResultStore.fetch at 0x00000242B1596C00>
+           │                       │    └ <nonebot.adapters.onebot.store.ResultStore object at 0x00000242B15CD250>
+           │                       └ Adapter(name='OneBot V11')
+           └ <function handle_api_result at 0x00000242B1514F40>
+  File "D:\NoneBot\Beta\.venv\Lib\site-packages\nonebot\adapters\onebot\v11\utils.py", line 58, in handle_api_result
+    raise ActionFailed(**result)
+          │              └ {'status': 'failed', 'retcode': 1200, 'data': None, 'message': 'Error: EventChecker Failed: NTEvent serviceAndMethod:NodeIKer...
+          └ <class 'nonebot.adapters.onebot.v11.exception.ActionFailed'>
+
+nonebot.adapters.onebot.v11.exception.ActionFailed: ActionFailed(status='failed', retcode=1200, data=None, message='Error: EventChecker Failed: NTEvent serviceAndMethod:NodeIKernelMsgService/sendMsg ListenerName:NodeIKernelMsgListener/onMsgInfoListUpdate EventRet:\n{\n    "result": 110,\n    "errMsg": "发送失败，你已被移出该群，请重新加群。"\n}\n', wording='Error: EventChecker Failed: NTEvent serviceAndMethod:NodeIKernelMsgService/sendMsg ListenerName:NodeIKernelMsgListener/onMsgInfoListUpdate EventRet:\n{\n    "result": 110,\n    "errMsg": "发送失败，你已被移出该群，请重新加群。"\n}\n', echo='8')
+2024-11-22 22:48:50.907 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 2246956661 | [message.group.normal]: Message 359499922 from 3247591708@[群:928654084] "北山 开始玩 DEATH STRANDING DIRECTOR'S CUT 了[image:summary=,file=000001464e61704361744f6e65426f747c4d736746696c657c327c3932383635343...,sub_type=0,file_id=000001464e61704361744f6e65426f747c4d736746696c657c327c3932383635343...,url=https://multimedia.nt.qq.com.cn/download?appid=1407&fileid=EhT6t3WF...,file_size=26595,file_unique=3fa7b936a2d9bc21e046e3431bbd3691]"
+2024-11-22 22:50:17.586 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 2246956661 | [message.group.normal]: Message 397269970 from 1356890337@[群:928654084] '我嘞个死亡搁浅耐玩王'
+2024-11-22 22:50:29.172 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 2246956661 | [message.group.normal]: Message 1690092670 from 1356890337@[群:928654084] '丁哥补药玩昏过去口牙'
+2024-11-22 22:50:32.459 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 2246956661 | [message.group.normal]: Message 448037652 from 2559815776@[群:928654084] '死亡搁浅王呀'
+2024-11-22 22:50:38.151 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 2246956661 | [message.group.normal]: Message 1719589540 from 2559815776@[群:928654084] '死亡搁浅王小桃'
+2024-11-22 23:05:04.909 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 2246956661 | [message.group.normal]: Message 2090814825 from 2559815776@[群:928654084] '.steam.show'
+2024-11-22 23:05:04.932 | INFO     | nonebot:_run_matcher:435 - Event will be handled by Matcher(type='message', module=nonebot_plugin_steam_info, lineno=72)
+2024-11-22 23:05:07.797 | INFO     | nonebot:simple_run:846 - Matcher(type='message', module=nonebot_plugin_steam_info, lineno=72) running complete
+2024-11-22 23:05:08.109 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 2246956661 | [message.group.normal]: Message 77929881 from 3247591708@[群:928654084] '[image:summary=,file=000001464e61704361744f6e65426f747c4d736746696c657c327c3932383635343...,sub_type=0,file_id=000001464e61704361744f6e65426f747c4d736746696c657c327c3932383635343...,url=https://multimedia.nt.qq.com.cn/download?appid=1407&fileid=EhQSYv0x...,file_size=74048,file_unique=c4cab2294e9312a187282f000886cc0c]'
+2024-11-22 23:13:51.240 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 2246956661 | [message.group.normal]: Message 492686632 from 3247591708@[群:928654084] '小馋猫 开始玩 Counter-Strike 2 了[image:summary=,file=000001464e61704361744f6e65426f747c4d736746696c657c327c3932383635343...,sub_type=0,file_id=000001464e61704361744f6e65426f747c4d736746696c657c327c3932383635343...,url=https://multimedia.nt.qq.com.cn/download?appid=1407&fileid=EhTcid5M...,file_size=17888,file_unique=3b56faadfcf0eff96085854416b8e9f3]'
+2024-11-22 23:25:05.429 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 2246956661 | [message.group.normal]: Message 1554691749 from 2559815776@[群:928654084] '[at:qq=3247591708] .steam.off'
+2024-11-22 23:25:05.963 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 2246956661 | [message.group.normal]: Message 1792922038 from 3247591708@[群:928654084] '已禁用 Steam 播报 o.O'
+2024-11-22 23:38:49.578 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 2246956661 | [message.group.normal]: Message 1324132580 from 2559815776@[群:928654084] '.steam.show'
+2024-11-22 23:38:49.598 | INFO     | nonebot:_run_matcher:435 - Event will be handled by Matcher(type='message', module=nonebot_plugin_steam_info, lineno=72)
+2024-11-22 23:38:52.043 | INFO     | nonebot:simple_run:846 - Matcher(type='message', module=nonebot_plugin_steam_info, lineno=72) running complete
+2024-11-22 23:38:52.251 | SUCCESS  | nonebot:handle_event:535 - OneBot V11 2246956661 | [message.group.normal]: Message 457781459 from 3247591708@[群:928654084] '[image:summary=,file=000001464e61704361744f6e65426f747c4d736746696c657c327c3932383635343...,sub_type=0,file_id=000001464e61704361744f6e65426f747c4d736746696c657c327c3932383635343...,url=https://multimedia.nt.qq.com.cn/download?appid=1407&fileid=EhSi_Y2O...,file_size=75078,file_unique=39eace4cc221217ea93ca314ad9623b9]'
