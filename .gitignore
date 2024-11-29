@@ -1,9 +1,10 @@
-/.env.prod
+/.env
 /TempLog.txt
 /.venv/pyvenv.cfg
 logs/
 fonts/
 data/
+my_plugins/
 .venv/include/
 .venv/Scripts/
 .venv/share/
