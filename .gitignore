@@ -8,3 +8,4 @@ my_plugins/
 .venv/include/
 .venv/Scripts/
 .venv/share/
+**/__pycache__
