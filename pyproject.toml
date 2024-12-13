@@ -9,6 +9,6 @@ requires-python = ">=3.9, <4.0"
 adapters = [
     { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" }
 ]
-plugins = ["nonebot_plugin_leetcode2", "nonebot_plugin_jrrp2", "nonebot_plugin_random_stereotypes", "nonebot_plugin_logpile", "nonebot_plugin_zxpix", "nonebot_plugin_clock", "nonebot_plugin_memes", "nonebot_plugin_memes_api", "nonebot_plugin_steam_info", "nonebot_plugin_emojimix", "nonebot_plugin_send", "nonebot_plugin_updater", "nonebot_plugin_csmarket"]
+plugins = ["nonebot_plugin_leetcode2", "nonebot_plugin_jrrp2", "nonebot_plugin_random_stereotypes", "nonebot_plugin_logpile", "nonebot_plugin_zxpix", "nonebot_plugin_clock", "nonebot_plugin_memes", "nonebot_plugin_memes_api", "nonebot_plugin_steam_info", "nonebot_plugin_emojimix", "nonebot_plugin_send", "nonebot_plugin_updater"]
 plugin_dirs = ["my_plugins"]
 builtin_plugins = ["echo"]
