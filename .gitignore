@@ -4,7 +4,6 @@
 logs/
 fonts/
 data/
-my_plugins/
 .venv/include/
 .venv/Scripts/
 .venv/share/
